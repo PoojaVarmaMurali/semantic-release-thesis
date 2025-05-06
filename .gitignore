@@ -1,0 +1,14 @@
+node_modules/
+dist/
+package-lock.json
+yarn-error.log
+npm-debug.log
+.DS_Store
+.vscode/
+.idea/
+*.iml
+*.log
+*.swp
+*.swo
+*.tmp
+
