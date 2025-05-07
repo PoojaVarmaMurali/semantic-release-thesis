@@ -1,6 +1,18 @@
 # [1.1.0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/1.0.0...1.1.0) (2025-05-07)
 
 
+### Bug Fixes
+
+* testing new semantic release ([c9b7934](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/c9b7934856b70826ef4032de88defddeb8735fc1))
+
+
+### Features
+
+* test new semantic release ([83d1a6a](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/83d1a6a24d08d713738780435500cf91670e571a))
+
+# [1.1.0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/1.0.0...1.1.0) (2025-05-07)
+
+
 ### Features
 
 * test new semantic release ([83d1a6a](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/83d1a6a24d08d713738780435500cf91670e571a))
