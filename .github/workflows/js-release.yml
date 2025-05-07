@@ -5,7 +5,11 @@ on:
     branches:
       - main
       - develop
-      
+
+permissions:
+  contents: write  # Required by semantic-release to push tags/releases
+  id-token: write  # Required by semantic-release to create GitHub releases
+
 
 jobs:
   release:
