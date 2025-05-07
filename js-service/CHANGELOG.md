@@ -8,6 +8,25 @@
 
 ### Features
 
+* (js) test2 ([b188bc0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/b188bc09c3636a20dd22e7e3058d152de4c6501c))
+* (py) test scoped tag in python ([a946d3c](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/a946d3c860e796488e15697e5916b24d219af835))
+* (py) testing scope tag in python ([3a68a72](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/3a68a7216384ee986156d01e8566cbf115ca170c))
+* (python) test initial commit ([4935302](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/493530205d9d791b73c4a031e003353de2b9f64d))
+* (python) test initial commit ([1279c7f](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/1279c7f94a656202b574e4fcf26b1fc54f5f3b5a))
+* test new semantic release ([83d1a6a](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/83d1a6a24d08d713738780435500cf91670e571a))
+* testing new semantic release ([cd3d3e3](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/cd3d3e3a0b8d73e040fb00e3b793fb406c6b771d))
+* testing new semantic release ([ee9084d](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/ee9084d6692b96200a14791515a45785f0c2f9eb))
+
+# [1.1.0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/1.0.0...1.1.0) (2025-05-07)
+
+
+### Bug Fixes
+
+* testing new semantic release ([c9b7934](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/c9b7934856b70826ef4032de88defddeb8735fc1))
+
+
+### Features
+
 * (python) test initial commit ([4935302](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/493530205d9d791b73c4a031e003353de2b9f64d))
 * (python) test initial commit ([1279c7f](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/1279c7f94a656202b574e4fcf26b1fc54f5f3b5a))
 * test new semantic release ([83d1a6a](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/83d1a6a24d08d713738780435500cf91670e571a))
