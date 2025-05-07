@@ -1,1 +1,18 @@
+# 1.0.0 (2025-05-07)
+
+
+### Bug Fixes
+
+* add conventionalcommits preset for commit-analyzer ([53828fc](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/53828fcd083fe78387a1d645a08f42adddf4cdbb))
+* add missing semantic-release plugins to main ([3dded32](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/3dded324f05b9a1c271d17a6713e9e767e686b0f))
+* added workflow permission ([eacbcce](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/eacbccee868cfd37aa5fa41a10da68199972c6c4))
+* cache npm dependencies from js-service ([3a2f240](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/3a2f240734e777087bbb355d75183662b87b98c3))
+* updated node version and added develop branch in trigger ([ab529da](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/ab529da5e6dd7e2ba3b97dd09f38ed7705bebd4f))
+
+
+### Features
+
+* add initial dummy index.js ([85be736](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/85be7367b7c703ba299f5a74d969e6376d4a7ce7))
+* added package-lock.json ([50328e0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/50328e0a57944de4568eb6d8e0331934966f9d9c))
+
 # Change Log\n\n
