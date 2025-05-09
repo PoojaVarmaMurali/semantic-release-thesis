@@ -11,3 +11,4 @@ npm-debug.log
 *.swo
 *.tmp
 thesis notes.md
+.venv/

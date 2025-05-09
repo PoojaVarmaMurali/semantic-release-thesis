@@ -1,6 +1,7 @@
 {
-    "branches": ["main", "develop", { "name": "feature/*", "prerelease": true }],
-    "tagFormat": "${version}",
+    "tagFormat": "js-v${version}",
+    "branches": ["main",  { "name": "develop", "prerelease": true }],
+    
     "plugins": [
       ["@semantic-release/commit-analyzer", { "preset": "conventionalcommits" }],
       "@semantic-release/release-notes-generator",
@@ -11,5 +12,5 @@
       }],
       "@semantic-release/github"
     ]
-  }
+}
 

@@ -3,4 +3,7 @@ version_variable = "python-service/__init__.py:__version__"
 branch = "main"
 upload_to_pypi = false
 changelog_file = "python-service/CHANGELOG.md"
- 
+tag_format = "py-v{version}"
+
+[tool.semantic_release.branches.develop]
+prerelease = true

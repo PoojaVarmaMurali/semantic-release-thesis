@@ -1,0 +1,48 @@
+name: Python Semantic Release
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install python-semantic-release
+        run: pip install python-semantic-release
+
+      - name: Show current branch
+        env:
+          CURRENT_BRANCH: ${{ github.ref_name }}
+        run: |
+          echo "Current branch: ${{ env.CURRENT_BRANCH }}"
+
+      - name: Simulate release logic on develop (safe dry-run)
+        if: ${{ github.ref_name == 'develop' }}
+        run: |
+          echo "Dry-run: checking version bump and changelog"
+          semantic-release version --skip-commit --print-version
+          semantic-release changelog
+        working-directory: ./python-service
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - name:  Full release on main
+        if: github.ref_name == 'main'
+        run: |
+          echo " Running full semantic release on main"
+          semantic-release publish
+        working-directory: ./python-service
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
