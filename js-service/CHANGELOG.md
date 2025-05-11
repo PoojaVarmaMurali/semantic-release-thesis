@@ -1,3 +1,10 @@
+# [1.0.0-dev.2](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/js-v1.0.0-dev.1...js-v1.0.0-dev.2) (2025-05-11)
+
+
+### Features
+
+* **python:** test changelog after config fixes ([4d468e3](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/4d468e34327fec7ad75c9f7b7a5dac800cf3f1fb))
+
 # 1.0.0-dev.1 (2025-05-11)
 
 
