@@ -1,3 +1,16 @@
+# [1.0.0-dev.2](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/js-v1.0.0-dev.1...js-v1.0.0-dev.2) (2025-05-11)
+
+
+### Bug Fixes
+
+* **js:** trigger pre-release version bump ([aea32e6](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/aea32e6dfbd5376823d351fd58c5c83e4ea000ba))
+
+
+### Features
+
+* **js:** upadtes in the structure ([972383a](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/972383a786f94c749c5f2b5bf175ae1ce1fb859d))
+* **python:** test changelog after config fixes ([4d468e3](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/4d468e34327fec7ad75c9f7b7a5dac800cf3f1fb))
+
 # 1.0.0-dev.1 (2025-05-11)
 
 
