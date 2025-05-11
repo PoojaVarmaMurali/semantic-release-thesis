@@ -2,7 +2,11 @@
   "tagFormat": "js-v${version}",
   "branches": [
     "main",
-    { "name": "develop", "prerelease": "dev" }
+    { 
+      "name": "develop",
+       "prerelease": "dev",
+      "channel": "dev"
+    }
   ],
   "plugins": [
     ["@semantic-release/commit-analyzer", { "preset": "conventionalcommits" }],
