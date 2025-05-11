@@ -32,3 +32,7 @@
 - Keep summaries under 70 characters  
 - Use scopes for clarity in multi-language repos  
 - Avoid vague messages like `fix: stuff` or `update`  
+
+Javascript:
+
+All Semantic Release config and dependencies for JavaScript live inside js-service/.
