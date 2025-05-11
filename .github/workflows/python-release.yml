@@ -32,7 +32,7 @@ jobs:
         if: ${{ github.ref_name == 'develop' }}
         run: |
           echo "Dry-run: checking version bump and changelog"
-          semantic-release version --skip-commit --print-version
+          semantic-release version --no-commit
           semantic-release changelog
         working-directory: ./python-service
         env:

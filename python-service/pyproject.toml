@@ -6,4 +6,4 @@ changelog_file = "python-service/CHANGELOG.md"
 tag_format = "py-v{version}"
 
 [tool.semantic_release.branches.develop]
-prerelease = true
+prerelease = "dev"
