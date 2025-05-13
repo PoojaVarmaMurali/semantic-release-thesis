@@ -4,9 +4,10 @@
     "main",
     { 
       "name": "develop",
-      "prerelease": true,
-      "channel": "dev"
-    }
+      "channel": "dev",
+      "prerelease": true
+  }
+      
   ],
   "plugins": [
     ["@semantic-release/commit-analyzer", { "preset": "conventionalcommits" }],
