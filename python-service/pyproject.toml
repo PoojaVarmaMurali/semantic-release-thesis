@@ -8,5 +8,6 @@ tag_format = "py-v{version}"
 name = "main"
 
 [tool.semantic_release.branches.develop]
+name = "develop"
 prerelease = true
 channel = "dev"
