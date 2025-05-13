@@ -23,7 +23,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version-file: './js-service/.nvmrc'
+          node-version-file: '.nvmrc'
           cache: 'npm'
           cache-dependency-path: js-service/package-lock.json
 
@@ -37,10 +37,40 @@ jobs:
       - name: Check if tag already exists
         run: |
           # Check if a Git tag corresponding to the version in package.json already exists
+          if ! command -v jq >/dev/null; then
+              echo "Error: jq is not installed. Please install jq before proceeding."
+              exit 1
+          fi
+
+          if [ ! -f js-service/package.json ]; then
+              echo "Error: package.json file is missing in the js-service directory."
+              OUTPUT=$(npx semantic-release --dry-run 2>&1)
+              if echo "$OUTPUT" | grep -q "Error"; then
+                echo "Semantic-release encountered an error:"
+                echo "$OUTPUT"
+                exit 1
+              fi
+              NEXT_VERSION=$(echo "$OUTPUT" | grep "next release version is" | awk '{print $NF}')
+          fi
+
+          if ! jq -e .version js-service/package.json >/dev/null 2>&1; then
+              echo "Error: package.json is malformed or missing the 'version' field."
+              exit 1
+          fi
+
           if git rev-parse "js-v$(jq -r .version js-service/package.json)" >/dev/null 2>&1; then
-              echo "Tag js-v$(jq -r .version js-service/package.json) already exists. Skipping release."
+              NEXT_VERSION=$(npx semantic-release --dry-run --debug | jq -r '.nextRelease.version')
               exit 0
           fi
+
+      - name: Prevent re-tag if version already exists
+        run: |
+              NEXT_VERSION=$(npx semantic-release --dry-run | grep "next release version is" | awk '{print $NF}')
+              TAG="js-v$NEXT_VERSION"
+              if git rev-parse "$TAG" >/dev/null 2>&1; then
+                echo "Tag $TAG already exists. Skipping release."
+                exit 0
+              fi
 
       - name: Semantic Release
         run: npx semantic-release
