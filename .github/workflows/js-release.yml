@@ -5,6 +5,12 @@ on:
     branches:
       - main
       - develop
+    paths:
+      - 'js-service/**'
+      - '.github/workflows/js-release.yml'
+      - 'README.md'
+      - '.nvmrc'
+
 
 permissions:
   contents: write  # Required by semantic-release to push tags/releases
@@ -20,7 +26,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
+      - name: Use Node.js version from .nvmrc
         uses: actions/setup-node@v4
         with:
           node-version-file: '.nvmrc'
@@ -31,48 +37,36 @@ jobs:
         run: npm ci
         working-directory: ./js-service
 
-      - name: Install jq
-        run: sudo apt-get update && sudo apt-get install -y jq
-
-      - name: Check if tag already exists
+      - name: Show current branch
+        env:
+          CURRENT_BRANCH: ${{ github.ref_name }}
         run: |
-          # Check if a Git tag corresponding to the version in package.json already exists
-          if ! command -v jq >/dev/null; then
-              echo "Error: jq is not installed. Please install jq before proceeding."
-              exit 1
-          fi
+          echo "Current branch: ${{ env.CURRENT_BRANCH }}"
+          - name: Dry-run on develop (check version bump)
+          if: github.ref_name == 'develop'
+          id: js_version_check
+          run: |
+            npx semantic-release --dry-run > dry-run.log || true
+            cat dry-run.log
+            VERSION=$(grep -oP 'next release version is \K.*' dry-run.log || echo "none")
+            echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
+          working-directory: ./js-service
+          env:
+            GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
-          if [ ! -f js-service/package.json ]; then
-              echo "Error: package.json file is missing in the js-service directory."
-              OUTPUT=$(npx semantic-release --dry-run 2>&1)
-              if echo "$OUTPUT" | grep -q "Error"; then
-                echo "Semantic-release encountered an error:"
-                echo "$OUTPUT"
-                exit 1
-              fi
-              NEXT_VERSION=$(echo "$OUTPUT" | grep "next release version is" | awk '{print $NF}')
-          fi
+      - name: Skip release (develop, no version bump)
+        if: github.ref_name == 'develop' && steps.js_version_check.outputs.VERSION == 'none'
+        run: echo "Skipping release — no version bump detected."
 
-          if ! jq -e .version js-service/package.json >/dev/null 2>&1; then
-              echo "Error: package.json is malformed or missing the 'version' field."
-              exit 1
-          fi
-
-          if git rev-parse "js-v$(jq -r .version js-service/package.json)" >/dev/null 2>&1; then
-              NEXT_VERSION=$(npx semantic-release --dry-run --debug | jq -r '.nextRelease.version')
-              exit 0
-          fi
-
-      - name: Prevent re-tag if version already exists
-        run: |
-              NEXT_VERSION=$(npx semantic-release --dry-run | grep "next release version is" | awk '{print $NF}')
-              TAG="js-v$NEXT_VERSION"
-              if git rev-parse "$TAG" >/dev/null 2>&1; then
-                echo "Tag $TAG already exists. Skipping release."
-                exit 0
-              fi
-
-      - name: Semantic Release
+      - name: Release changelog (develop with version bump)
+        if: github.ref_name == 'develop' && steps.js_version_check.outputs.VERSION != 'none'
+        run: npx semantic-release changelog
+        working-directory: ./js-service
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+  
+      - name: Full release on main
+        if: github.ref_name == 'main'
         run: npx semantic-release
         working-directory: ./js-service
         env:

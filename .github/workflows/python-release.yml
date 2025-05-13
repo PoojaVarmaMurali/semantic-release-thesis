@@ -5,6 +5,10 @@ on:
     branches:
       - main
       - develop
+    paths:
+      - 'python-service/**'
+      - '.github/workflows/python-release.yml'
+      - 'README.md'
 
 jobs:
   release:
@@ -28,20 +32,35 @@ jobs:
         run: |
           echo "Current branch: ${{ env.CURRENT_BRANCH }}"
 
-      - name: Dry-run on develop branch
+
+    # Dry-run only if develop branch AND version bump is detected      
+      - name: Detect version bump on develop
         if: github.ref_name == 'develop'
+        id: py_version_check
         run: |
           ln -s ../.git .git
-          semantic-release version --no-commit
-          semantic-release changelog
+          VERSION=$(semantic-release version --no-commit || echo "none")
+          echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
         working-directory: ./python-service
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
-      - name:  Full release on main
+      - name: Skip changelog (develop, no bump)
+        if: github.ref_name == 'develop' && steps.py_version_check.outputs.VERSION == 'none'
+        run: echo "No version bump detected — skipping changelog."  
+
+      - name: Generate changelog on develop (if needed)
+        if: github.ref_name == 'develop' && steps.version_check.outputs.VERSION != 'none'
+        run: semantic-release changelog
+        working-directory: ./python-service
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - name: Full release on main
         if: github.ref_name == 'main'
         run: |
-          echo " Running full semantic release on main"
+          echo "Running full semantic release on main"
+          ln -s ../.git .git
           semantic-release publish
         working-directory: ./python-service
         env:
