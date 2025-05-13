@@ -42,17 +42,17 @@ jobs:
           CURRENT_BRANCH: ${{ github.ref_name }}
         run: |
           echo "Current branch: ${{ env.CURRENT_BRANCH }}"
-          - name: Dry-run on develop (check version bump)
-          if: github.ref_name == 'develop'
-          id: js_version_check
-          run: |
-            npx semantic-release --dry-run > dry-run.log || true
-            cat dry-run.log
-            VERSION=$(grep -oP 'next release version is \K.*' dry-run.log || echo "none")
-            echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
-          working-directory: ./js-service
-          env:
-            GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      - name: Dry-run on develop (check version bump)
+        if: github.ref_name == 'develop'
+        id: js_version_check
+        run: |
+          npx semantic-release --dry-run > dry-run.log || true
+          cat dry-run.log
+          VERSION=$(grep -oP 'next release version is \K.*' dry-run.log || echo "none")
+          echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
+        working-directory: ./js-service
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: Skip release (develop, no version bump)
         if: github.ref_name == 'develop' && steps.js_version_check.outputs.VERSION == 'none'
