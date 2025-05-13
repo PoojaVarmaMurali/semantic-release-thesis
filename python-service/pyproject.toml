@@ -9,3 +9,4 @@ name = "main"
 
 [tool.semantic_release.branches.develop]
 prerelease = true
+channel = "dev"
