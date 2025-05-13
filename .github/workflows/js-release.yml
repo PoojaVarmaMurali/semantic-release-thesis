@@ -60,7 +60,7 @@ jobs:
 
       - name: Release changelog (develop with version bump)
         if: github.ref_name == 'develop' && steps.js_version_check.outputs.VERSION != 'none'
-        run: npx semantic-release changelog
+        run: npx semantic-release --dry-run
         working-directory: ./js-service
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}

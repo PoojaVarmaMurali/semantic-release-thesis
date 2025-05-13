@@ -50,7 +50,7 @@ jobs:
         run: echo "No version bump detected — skipping changelog."  
 
       - name: Generate changelog on develop (if needed)
-        if: github.ref_name == 'develop' && steps.version_check.outputs.VERSION != 'none'
+        if: github.ref_name == 'develop' && steps.py_version_check.outputs.VERSION != 'none'
         run: semantic-release changelog
         working-directory: ./python-service
         env:
