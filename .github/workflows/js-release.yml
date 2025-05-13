@@ -23,7 +23,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20.10.0 
+          node-version-file: './js-service/.nvmrc'
           cache: 'npm'
           cache-dependency-path: js-service/package-lock.json
 
@@ -31,10 +31,22 @@ jobs:
         run: npm ci
         working-directory: ./js-service
 
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      - name: Check if tag already exists
+        run: |
+          # Check if a Git tag corresponding to the version in package.json already exists
+          if git rev-parse "js-v$(jq -r .version js-service/package.json)" >/dev/null 2>&1; then
+              echo "Tag js-v$(jq -r .version js-service/package.json) already exists. Skipping release."
+              exit 0
+          fi
+
       - name: Semantic Release
         run: npx semantic-release
         working-directory: ./js-service
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        
 
           
