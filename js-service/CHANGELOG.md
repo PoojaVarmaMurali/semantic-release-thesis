@@ -1,3 +1,10 @@
+# [1.0.0-develop.2](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/js-v1.0.0-develop.1...js-v1.0.0-develop.2) (2025-05-13)
+
+
+### Bug Fixes
+
+* **js:** added .nvmrc ([07e21d4](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/07e21d4e6620ac3448920b267a36f01e96b659ac))
+
 # 1.0.0-develop.1 (2025-05-13)
 
 
