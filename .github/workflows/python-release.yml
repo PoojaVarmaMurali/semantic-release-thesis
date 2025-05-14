@@ -17,14 +17,20 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Install python-semantic-release
-        run: pip install python-semantic-release
+      - name: Install dev dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -e .[dev]
+        working-directory: ./python-service
+
 
       - name: Show current branch
         env:
@@ -39,7 +45,7 @@ jobs:
         id: py_version_check
         run: |
           ln -s ../.git .git
-          VERSION=$(semantic-release version --no-commit || echo "none")
+          VERSION=$(npx semantic-release --dry-run | grep -oP 'next release version is \K.*' || echo "none")
           echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
         working-directory: ./python-service
         env:
@@ -51,7 +57,7 @@ jobs:
 
       - name: Generate changelog on develop (if needed)
         if: github.ref_name == 'develop' && steps.py_version_check.outputs.VERSION != 'none'
-        run: semantic-release changelog
+        run: npx semantic-release
         working-directory: ./python-service
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
@@ -61,7 +67,7 @@ jobs:
         run: |
           echo "Running full semantic release on main"
           ln -s ../.git .git
-          semantic-release publish
+          npx semantic-release
         working-directory: ./python-service
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}

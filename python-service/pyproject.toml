@@ -1,13 +1,13 @@
 [tool.semantic_release]
-version_variable = "python-service/__init__.py:__version__"
+version_variable = "__init__.py:__version__"
 upload_to_pypi = false
-changelog_file = "python-service/CHANGELOG.md"
+changelog_file = "CHANGELOG.md"
 tag_format = "py-v{version}"
 
 [tool.semantic_release.branch]
 name = "main"
 
-[tool.semantic_release.branches.develop]
+[tool.semantic_release.branch.develop]
 name = "develop"
 prerelease = true
 channel = "dev"
