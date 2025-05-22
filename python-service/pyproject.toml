@@ -1,0 +1,10 @@
+[tool.semantic_release]
+version_variable = "__init__.py:__version__"
+upload_to_pypi = false
+changelog_file = "CHANGELOG.md"
+tag_format = "py-v{version}"
+build_command = "python setup.py sdist bdist_wheel"
+version_source = "tag"
+commit_parser = "angular"
+branch = "main"
+

@@ -1,0 +1,71 @@
+name: Python Semantic Release
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+    paths:
+      - 'python-service/**'
+      - '.github/workflows/python-release.yml'
+      - 'README.md'
+  workflow_dispatch:
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' 
+
+      - name: Install Node.js semantic-release dependencies
+        run: npm ci 
+
+      - name: Install dev dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .[dev]
+        working-directory: ./python-service
+
+
+      - name: Show current branch
+        env:
+          CURRENT_BRANCH: ${{ github.ref_name }}
+        run: |
+          echo "Current branch: ${{ env.CURRENT_BRANCH }}"
+
+
+    # Dry-run only if develop branch AND version bump is detected      
+      - name: Dry run on develop
+        if: github.ref_name == 'develop'
+        working-directory: ./python-service
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          echo "Dry run step for develop branch (no operation defined)"
+          ln -s ../.git .git  # ensure Git context
+          npx semantic-release --extends=../.releaserc.python.json --dry-run
+
+
+      - name: Semantic Release full publish (main)
+        if: github.ref_name == 'main'
+        working-directory: ./python-service
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }} 
+        run: |
+          echo "Running full semantic release on main"
+          ln -s ../.git .git
+          npx semantic-release --extends=../.releaserc.python.json
+        
