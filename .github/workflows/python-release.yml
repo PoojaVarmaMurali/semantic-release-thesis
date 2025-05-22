@@ -56,7 +56,7 @@ jobs:
         run: |
           echo "Dry run step for develop branch (no operation defined)"
           ln -s ../.git .git  # ensure Git context
-          npx semantic-release --extends=./.releaserc.json --dry-run
+          npx semantic-release --extends=.releaserc.json --dry-run
 
 
       - name: Semantic Release full publish (main)
@@ -67,6 +67,6 @@ jobs:
         run: |
           echo "Running full semantic release on main"
           ln -s ../.git .git
-          npx semantic-release --extends=./.releaserc.json
+          npx semantic-release --extends=.releaserc.json
 
         
