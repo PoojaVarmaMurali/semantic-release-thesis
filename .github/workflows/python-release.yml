@@ -50,8 +50,9 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           echo "Dry run step for develop branch (no operation defined)"
-          source venv/bin/activate
-          semantic-release publish --noop --branch develop --tag-format "py-v{version}-dev"  
+          ln -s ../.git .git  # ensure Git context
+          semantic-release version --no-commit
+          semantic-release changelog
 
 
       - name: Full release on main
