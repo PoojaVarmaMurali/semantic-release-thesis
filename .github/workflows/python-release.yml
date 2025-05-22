@@ -9,7 +9,7 @@ on:
       - 'python-service/**'
       - '.github/workflows/python-release.yml'
       - 'README.md'
-
+  workflow_dispatch:
 jobs:
   release:
     runs-on: ubuntu-latest
