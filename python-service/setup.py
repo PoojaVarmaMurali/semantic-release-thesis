@@ -3,7 +3,7 @@ from setuptools import setup, find_packages   # type: ignore
 import re
 import os
 
-version_file = os.path.join("python_service", "__init__.py")  #extract version from __init__.py
+version_file = os.path.join("python-service", "__init__.py")  #extract version from __init__.py
 with open(version_file, encoding="utf-8") as f:
     version_match = re.search(r'^__version__\s*=\s*["\'](.+)["\']', f.read(), re.M)
     if not version_match:
