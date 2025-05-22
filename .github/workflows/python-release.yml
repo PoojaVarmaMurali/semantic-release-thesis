@@ -27,8 +27,11 @@ jobs:
 
       - name: Install dev dependencies
         run: |
+          python -m venv venv
+          source venv/bin/activate
           pip install --upgrade pip
           pip install -e .[dev]
+          pip install python-semantic-release
         working-directory: ./python-service
 
 
@@ -40,34 +43,24 @@ jobs:
 
 
     # Dry-run only if develop branch AND version bump is detected      
-      - name: Detect version bump on develop
+      - name: Dry run on develop
         if: github.ref_name == 'develop'
-        id: py_version_check
+        working-directory: ./python-service
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          ln -s ../.git .git
-          VERSION=$(npx semantic-release --dry-run | grep -oP 'next release version is \K.*' || echo "none")
-          echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
-        working-directory: ./python-service
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          echo "Dry run step for develop branch (no operation defined)"
+          source venv/bin/activate
+          semantic-release publish --noop --branch develop --tag-format "py-v{version}-dev"  
 
-      - name: Skip changelog (develop, no bump)
-        if: github.ref_name == 'develop' && steps.py_version_check.outputs.VERSION == 'none'
-        run: echo "No version bump detected — skipping changelog."  
-
-      - name: Generate changelog on develop (if needed)
-        if: github.ref_name == 'develop' && steps.py_version_check.outputs.VERSION != 'none'
-        run: npx semantic-release
-        working-directory: ./python-service
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: Full release on main
         if: github.ref_name == 'main'
-        run: |
-          echo "Running full semantic release on main"
-          ln -s ../.git .git
-          npx semantic-release
         working-directory: ./python-service
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }} 
+        run: |
+          echo "Running full semantic release on main"
+          source venv/bin/activate
+          semantic-release publish
+        

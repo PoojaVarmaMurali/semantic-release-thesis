@@ -1,11 +1,20 @@
-from setuptools import setup, find_packages
+#packaging 
+from setuptools import setup, find_packages   # type: ignore
+import re
+import os
 
+version_file = os.path.join("python_service", "__init__.py")  #extract version from __init__.py
+with open(version_file, encoding="utf-8") as f:
+    version_match = re.search(r'^__version__\s*=\s*["\'](.+)["\']', f.read(), re.M)
+    if not version_match:
+        raise RuntimeError("Unable to find __version__ in __init__.py")
+    version = version_match.group(1)
 setup(
     name='python-service',
-    version='0.0.0',  # this will be overridden by semantic-release
+    version=version, 
     packages=find_packages(),
     install_requires=[
-        # Your production dependencies go here
+        # production dependencies go here
     ],
     extras_require={
         'dev': [
