@@ -25,13 +25,18 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' 
+
+      - name: Install Node.js semantic-release dependencies
+        run: npm ci 
+
       - name: Install dev dependencies
         run: |
-          python -m venv venv
-          source venv/bin/activate
-          pip install --upgrade pip
+          python -m pip install --upgrade pip
           pip install -e .[dev]
-          pip install python-semantic-release
         working-directory: ./python-service
 
 
@@ -51,17 +56,17 @@ jobs:
         run: |
           echo "Dry run step for develop branch (no operation defined)"
           ln -s ../.git .git  # ensure Git context
-          semantic-release version --no-commit
-          semantic-release changelog
+          npx semantic-release --extends=./.releaserc.json --dry-run
 
 
-      - name: Full release on main
+      - name: Semantic Release full publish (main)
         if: github.ref_name == 'main'
         working-directory: ./python-service
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }} 
         run: |
           echo "Running full semantic release on main"
-          source venv/bin/activate
-          semantic-release publish
+          ln -s ../.git .git
+          npx semantic-release --extends=./.releaserc.json
+
         
