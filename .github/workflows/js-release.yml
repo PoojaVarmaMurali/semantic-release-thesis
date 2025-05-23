@@ -10,7 +10,7 @@ on:
       - '.github/workflows/js-release.yml'
       - 'README.md'
       - '.nvmrc'
-
+  workflow_dispatch:
 
 permissions:
   contents: write  # Required by semantic-release to push tags/releases
