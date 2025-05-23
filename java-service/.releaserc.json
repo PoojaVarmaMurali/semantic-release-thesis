@@ -25,7 +25,7 @@
     [
       "@semantic-release/exec",
       {
-        "prepareCmd": "sed -i 's|<version>.*</version>|<version>${nextRelease.version}</version>|' pom.xml"
+        "prepareCmd":"mvn versions:set -DnewVersion=${nextRelease.version} -DgenerateBackupPoms=false"
       }
     ],
     [
