@@ -1,3 +1,18 @@
+# [1.2.0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/js-v1.1.0...js-v1.2.0) (2025-05-23)
+
+
+### Bug Fixes
+
+* **python:** fixed npm ([9690d6e](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/9690d6e2105a4dc80ef5af00aae35ca85bb2958d))
+* **py:** updated init.py ([40c5d51](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/40c5d51c96814a4fba1a4545beb3c52a5ba29ddc))
+
+
+### Features
+
+* **python:** trigger full release with JS-based flow ([41664fc](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/41664fc4efdb990fcf40dd68b8445f3a14bf9e67))
+* **python:** trigger full release with JS-based flow ([fc6fdc1](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/fc6fdc1dbcabf207681bfaff9ed0c3907abb596b))
+* **python:** trigger full release with JS-based flow ([2a4e921](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/2a4e9219e4c1015d558783a6455f0aba46e26028))
+
 # [1.1.0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/js-v1.0.0...js-v1.1.0) (2025-05-23)
 
 
