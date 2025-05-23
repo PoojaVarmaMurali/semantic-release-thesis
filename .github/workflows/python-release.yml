@@ -61,11 +61,10 @@ jobs:
 
       - name: Semantic Release full publish (main)
         if: github.ref_name == 'main'
-        working-directory: ./python-service
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }} 
         run: |
           echo "Running full semantic release on main"
-          ln -s ../.git .git
+          cd python-service
           npx semantic-release 
         
