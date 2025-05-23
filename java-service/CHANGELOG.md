@@ -1,3 +1,11 @@
+# [1.1.0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/java-v1.0.0...java-v1.1.0) (2025-05-23)
+
+
+### Features
+
+* **java:** trigger Maven based version bump ([df09e90](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/df09e909cd6f84b873e0e4c75e00e3942ece6ebc))
+* **java:** trigger Maven based version bump ([48860fb](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/48860fb6c91804c4fe4bebc9dd79c3679f942d09))
+
 # 1.0.0 (2025-05-23)
 
 
