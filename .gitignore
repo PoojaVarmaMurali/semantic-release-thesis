@@ -1,0 +1,43 @@
+# JavaScript
+node_modules/
+dist/
+yarn-error.log
+npm-debug.log
+
+# Python
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.env.*
+
+# Java (for future support or if simulated)
+*.class
+*.jar
+*.war
+*.ear
+target/
+.gradle/
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.iml
+
+# Logs and temp files
+*.log
+*.swp
+*.swo
+*.tmp
+
+# macOS & Windows
+.DS_Store
+Thumbs.db
+
+# Custom project notes or outputs
+thesis notes.md
+
+# GitHub Actions & CI/CD artifacts (optional)
+coverage/
+release-notes.md
