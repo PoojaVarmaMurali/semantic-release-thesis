@@ -1,0 +1,50 @@
+name: Java Semantic Release
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+    paths:
+      - 'java-service/**'
+      - '.github/workflows/java-release.yml'
+      - README.md
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Semantic Release dependencies
+        working-directory: ./java-service
+        run: |
+          npm install
+
+      - name: Dry Run on develop
+        if: github.ref_name == 'develop'
+        working-directory: ./java-service
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          echo "Dry-run for develop branch"
+          npx semantic-release --dry-run
+
+      - name: Run Semantic Release
+        if: github.ref_name == 'main'
+        working-directory: ./java-service
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          echo "Full Semantic Release for Java (main)"
+          npx semantic-release

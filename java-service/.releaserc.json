@@ -1,0 +1,40 @@
+{
+  "tagFormat": "java-v${version}",
+  "branches": [
+    "main",
+    {
+      "name": "develop",
+      "channel": "dev",
+      "prerelease": true
+    }
+  ],
+  "plugins": [
+    [
+      "@semantic-release/commit-analyzer",
+      {
+        "preset": "conventionalcommits"
+      }
+    ],
+    "@semantic-release/release-notes-generator",
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogFile": "CHANGELOG.md"
+      }
+    ],
+    [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "sed -i 's|<version>.*</version>|<version>${nextRelease.version}</version>|' pom.xml"
+      }
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "assets": ["pom.xml", "CHANGELOG.md"],
+        "message": "chore(release): java-v${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      }
+    ],
+    "@semantic-release/github"
+  ]
+}
