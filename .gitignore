@@ -41,3 +41,7 @@ thesis notes.md
 # GitHub Actions & CI/CD artifacts (optional)
 coverage/
 release-notes.md
+
+
+/CHANGELOG.md
+/python_servicepkg/
