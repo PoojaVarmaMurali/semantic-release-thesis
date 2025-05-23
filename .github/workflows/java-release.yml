@@ -26,6 +26,13 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Set up Java and Maven
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          cache: maven
+
       - name: Install Semantic Release dependencies
         working-directory: ./java-service
         run: |
