@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.2.0...py-v1.3.0) (2025-05-23)
+
+
+### Features
+
+* **python:** fixed paths ([59b20e7](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/59b20e7018a51781f9ee57a09797e9b305f52e9e))
+
 # [1.2.0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.1.1...py-v1.2.0) (2025-05-23)
 
 
