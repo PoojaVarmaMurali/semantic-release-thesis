@@ -1,6 +1,6 @@
 {
   "name": "js-service",
-  "version": "0.0.0-development",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {

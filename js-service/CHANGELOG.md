@@ -1,3 +1,16 @@
+# [1.1.0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/js-v1.0.0...js-v1.1.0) (2025-05-23)
+
+
+### Bug Fixes
+
+* **python:** correct version bump path ([8ed8260](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/8ed82603f366b0ac17ea3087894f071a75a11362))
+* **python:** ensure semantic-release detects correct base branch ([3409a47](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/3409a479cafb74477c06c2c0632e27e6b6d8fdad))
+
+
+### Features
+
+* **js:** added npm plugin for js ([935df88](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/935df88f3283a725e9113d2bc0b0b51709d9e94e))
+
 # 1.0.0 (2025-05-22)
 
 
