@@ -2,7 +2,9 @@ name: Core Semantic Release
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
+      - develop
     paths:
       - 'core/**'
       - '.github/workflows/core-release.yml'
@@ -25,6 +27,15 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: Dry Run on develop
+        if: github.ref_name == 'develop'
+        working-directory: ./core
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          echo "Dry-run for develop branch"
+          npx semantic-release --extends=.releaserc.json --dry-run
 
       - name: Run Semantic Release (Core)
         run: npx semantic-release --extends=core/.releaserc.json
