@@ -1,3 +1,20 @@
+# [1.2.0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/java-v1.1.0...java-v1.2.0) (2025-05-27)
+
+
+### Bug Fixes
+
+* improve language detection accuracy with more sample files ([736bcd1](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/736bcd1624ab9942c2653d0e51317de6677ebd2f))
+
+
+### Features
+
+* **core:** minor refinment ([5dcafdd](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/5dcafdd3d7713be530342a93a50b09dd158779ad))
+* **core:** minor refinment ([f2174f2](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/f2174f24a8dda178a49afc6863fbe732b906ce9e))
+* **core:** move shared logic to core and enable independent versioning ([4cfe8a2](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/4cfe8a20bc6c890dcb9372466006cbec8edd4f8b))
+* **core:** move shared logic to core and enable independent versioning ([43f9e3e](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/43f9e3e42cad1b083eece3dfa103cd1b3ad95862))
+* **core:** npm update ([59aa094](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/59aa094ab855f216bbb7eb00aae74402923c27f3))
+* **core:** npm update ([5b9d932](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/5b9d9320839db3bc1baf6d293561215a4d8f33f5))
+
 # [1.1.0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/java-v1.0.0...java-v1.1.0) (2025-05-23)
 
 
