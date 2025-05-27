@@ -6,7 +6,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.example</groupId>
   <artifactId>java-service</artifactId>
-  <version>1.1.0</version>
+  <version>1.2.0</version>
 
   <name>Java Service</name>
   <description>Semantic Release Java Example</description>
