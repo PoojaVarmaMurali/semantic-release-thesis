@@ -36,7 +36,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           echo "Dry-run for develop branch"
-          npx semantic-release --extends=.releaserc.json --dry-run
+          npx semantic-release --dry-run
 
       - name: Full Release on main
         if: github.ref_name == 'main'
@@ -45,4 +45,4 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           echo "Running full semantic release on main"
-          npx semantic-release --extends=.releaserc.json
+          npx semantic-release 
