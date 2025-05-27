@@ -27,6 +27,7 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: ./core
 
       - name: Dry Run on develop
         if: github.ref_name == 'develop'
@@ -37,7 +38,11 @@ jobs:
           echo "Dry-run for develop branch"
           npx semantic-release --extends=.releaserc.json --dry-run
 
-      - name: Run Semantic Release (Core)
-        run: npx semantic-release --extends=core/.releaserc.json
+      - name: Full Release on main
+        if: github.ref_name == 'main'
+        working-directory: ./core
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          echo "Running full semantic release on main"
+          npx semantic-release --extends=.releaserc.json
