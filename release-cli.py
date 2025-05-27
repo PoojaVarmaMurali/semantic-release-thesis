@@ -1,7 +1,7 @@
 import argparse
 import subprocess
 import sys
-from language_detector.detect_language import detect_language 
+from core.language_detector.detect_language import detect_language 
 
 LANGUAGE_COMMANDS = {
     "Python": {
