@@ -1,7 +1,7 @@
-import argparse
-import subprocess
-import sys
-from core.language_detector.detect_language import detect_language 
+import argparse  #prase cammand-line arguments
+import subprocess #runs external shell command
+import sys      #exits the script with custom exit code/messages
+from core.language_detector.detect_language import detect_language      #custom function to detect the project language
 
 LANGUAGE_COMMANDS = {
     "Python": {
@@ -15,8 +15,24 @@ LANGUAGE_COMMANDS = {
     "Java": {
         "path": "java-service",
         "run": "npx semantic-release"
+    },
+    "Core": {
+        "path": "core",
+        "run": "npx semantic-release"
     }
 }
+
+def detect_scope(repo_path: str) -> str:
+    import os
+
+    core_paths = {"core", "release-cli.py", ".github/workflows/universal-release.yml"}
+    changed_files = subprocess.check_output(["git", "diff", "--name-only", "HEAD^"]).decode().splitlines()
+
+    for file in changed_files:
+        if file in changed_files:
+            print("\n Detected changes in core/shared logic")
+            return "Core"
+    return detect_language(repo_path)
 
 def run_release(lang: str):
     if lang not in LANGUAGE_COMMANDS:
@@ -42,6 +58,7 @@ def main():
 
     args = parser.parse_args()
     lang = detect_language(args.repo_path)
+    print(f"language={lang}")
     run_release(lang)
 
 if __name__ == "__main__":
