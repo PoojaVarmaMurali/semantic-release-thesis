@@ -1,3 +1,10 @@
+# [1.5.0-develop.6](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.5.0-develop.5...py-v1.5.0-develop.6) (2025-05-31)
+
+
+### Bug Fixes
+
+* **core:** force core release trigger from CLI change ([fda68cd](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/fda68cda54754bb39f3eb2a3ed763b722cdf957b))
+
 # [1.5.0-develop.5](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.5.0-develop.4...py-v1.5.0-develop.5) (2025-05-31)
 
 
