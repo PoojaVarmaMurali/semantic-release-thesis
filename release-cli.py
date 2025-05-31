@@ -25,14 +25,22 @@ LANGUAGE_COMMANDS = {
 def detect_scope(repo_path: str) -> str:
     import os
 
-    core_paths = {"core", "release-cli.py", ".github/workflows/universal-release.yml"}
+    # Check if the core/shared logic has changed
     changed_files = subprocess.check_output(["git", "diff", "--name-only", "HEAD^"]).decode().splitlines()
 
     for file in changed_files:
-        if file in changed_files:
+        if (
+            file.startswith("core/")
+            or file == "release-cli.py"
+            or file == ".github/workflows/universal-release.yml"
+            or file.startswith(".github/workflows/")
+        ):
             print("\n Detected changes in core/shared logic")
+            print("language=Core")
             return "Core"
-    return detect_language(repo_path)
+    lang = detect_language(repo_path)
+    print(f"language={lang}")
+    return lang
 
 def run_release(lang: str):
     if lang not in LANGUAGE_COMMANDS:
