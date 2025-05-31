@@ -78,7 +78,7 @@ def main():
     parser.add_argument("repo_path", help="Path to the project directory")
 
     args = parser.parse_args()
-    lang = detect_language(args.repo_path)
+    lang = detect_scope(args.repo_path)
     print(f"language={lang}")
     run_release(lang)
 
