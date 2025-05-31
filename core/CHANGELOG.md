@@ -1,3 +1,17 @@
+# [1.1.0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.0.0...core-v1.1.0) (2025-05-31)
+
+
+### Bug Fixes
+
+* testing language detection ([086cee2](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/086cee29fc6a9f3ce0b3bd64c4601d25fee57ade))
+* tweeked root folder content ([632d97d](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/632d97d67de64c322e7d06cf071cd487e6b44e98))
+* workflow rename ([471d069](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/471d069de8bc851e2767cd8a853967033c3d65b6))
+
+
+### Features
+
+* added a central pipeline ([0db1444](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/0db1444124616b6bfb55fa5681134a0caa6feca9))
+
 # 1.0.0 (2025-05-27)
 
 

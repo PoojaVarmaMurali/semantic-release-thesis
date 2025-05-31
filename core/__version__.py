@@ -1,1 +1,1 @@
-__version__ = "1.0.0" # Initial version for core module
+__version__ = "1.1.0" # Initial version for core module
