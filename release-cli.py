@@ -33,13 +33,20 @@ def detect_scope(repo_path: str) -> str:
         print(f"Error detecting changed files: {e}")
         return detect_language(repo_path)
 
+    print("\n📄 Changed files:")
+    for f in changed_files:
+        print(f" - {f}")
+
+    # Normalize paths to avoid relative issues
+    changed_files = [f.strip().lstrip("./") for f in changed_files]
+
     for file in changed_files:
         if (
-            file.endswith ("release-cli.py")
+            file == "release-cli.py"
             or file.startswith("core/")
             or file.startswith(".github/workflows/")
         ):
-            print("\n Detected changes in core/shared logic.")
+            print("\n🔍 Detected changes in core/shared logic.")
             print("language=Core")
             return "Core"
 
