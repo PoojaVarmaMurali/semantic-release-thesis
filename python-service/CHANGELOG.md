@@ -1,3 +1,10 @@
+# [1.5.0-develop.5](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.5.0-develop.4...py-v1.5.0-develop.5) (2025-05-31)
+
+
+### Bug Fixes
+
+* **core:** Modified release-cli-py ([e52e6d9](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/e52e6d9c06cdaf080932934e2c0b84b33a183bc9))
+
 # [1.5.0-develop.4](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.5.0-develop.3...py-v1.5.0-develop.4) (2025-05-31)
 
 
