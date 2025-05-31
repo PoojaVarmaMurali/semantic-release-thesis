@@ -1,3 +1,10 @@
+# [1.5.0-develop.4](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.5.0-develop.3...py-v1.5.0-develop.4) (2025-05-31)
+
+
+### Bug Fixes
+
+* tweeked pythong config ([422e9ec](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/422e9ec22817df96cede5f95abc671613802af61))
+
 ## [1.4.1](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.4.0...py-v1.4.1) (2025-05-23)
 
 
