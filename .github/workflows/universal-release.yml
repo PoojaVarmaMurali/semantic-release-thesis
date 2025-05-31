@@ -84,7 +84,7 @@ jobs:
           node-version: '20'
           cache: 'npm'
 
-      - name: Install Node.js dependencies
+      - name: Install Node.js Dev dependencies
         run: npm install
         working-directory: python-service
 
