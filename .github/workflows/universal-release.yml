@@ -59,7 +59,7 @@ jobs:
           
       - name: Run JS Release
         run: npx semantic-release
-        working-directory: js-services
+        working-directory: js-service
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           
@@ -87,11 +87,11 @@ jobs:
       - name: Install Python Dev dependencies
         run: |
           pip install -e .[dev]
-        working-directory: python-services
+        working-directory: python-service
 
       - name: Run Python Release
         run: npx semantic-release
-        working-directory: python-services
+        working-directory: python-service
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
        
@@ -113,7 +113,7 @@ jobs:
         
       - name: Run Java Release
         run: npx semantic-release
-        working-directory: java-services
+        working-directory: java-service
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
