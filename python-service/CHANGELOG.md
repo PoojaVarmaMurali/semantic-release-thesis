@@ -1,3 +1,10 @@
+# [1.5.0-develop.8](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.5.0-develop.7...py-v1.5.0-develop.8) (2025-05-31)
+
+
+### Bug Fixes
+
+* **core:** debug ([73fdd5b](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/73fdd5b069d31262a989033d3e7d4b24d39d9c12))
+
 # [1.5.0-develop.7](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.5.0-develop.6...py-v1.5.0-develop.7) (2025-05-31)
 
 
