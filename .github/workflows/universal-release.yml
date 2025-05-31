@@ -88,6 +88,11 @@ jobs:
         run: npm install
         working-directory: python-service
 
+      - name: Patch invalid version before install
+        run: |
+          sed -i 's/-develop\./.dev/' python-service/python_servicepkg/__init__.py
+  
+
       - name: Install Python Dev dependencies
         run: |
           pip install -e .[dev]
