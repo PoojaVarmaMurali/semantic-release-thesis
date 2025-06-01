@@ -4,35 +4,49 @@ import sys      #exits the script with custom exit code/messages
 from core.language_detector.detect_language import detect_language      #custom function to detect the project language
 
 LANGUAGE_COMMANDS = {
-    "Python": {
+    "python": {
         "path": "python-service",
         "run": "npx semantic-release"
     },
-    "JavaScript": {
+    "javaScript": {
         "path": "js-service",
         "run": "npx semantic-release"
     },
-    "Java": {
+    "java": {
         "path": "java-service",
         "run": "npx semantic-release"
     },
-    "Core": {
+    "core": {
         "path": "core",
         "run": "npx semantic-release"
     }
 }
 
 def detect_scope(repo_path: str) -> str:
-    import os
+    try:
+        changed_files = subprocess.check_output(
+            ["git", "diff", "--name-only", "HEAD^"]
+        ).decode().splitlines()
+    except subprocess.CalledProcessError as e:
+        print(f"Error detecting changed files: {e}")
+        return detect_language(repo_path).strip().lower()
 
-    core_paths = {"core", "release-cli.py", ".github/workflows/universal-release.yml"}
-    changed_files = subprocess.check_output(["git", "diff", "--name-only", "HEAD^"]).decode().splitlines()
+    print("\n📄 Changed files:")
+    for f in changed_files:
+        print(f" - {f}")
+
+    # Normalize paths to avoid relative issues
+    changed_files = [f.strip().lstrip("./") for f in changed_files]
 
     for file in changed_files:
-        if file in changed_files:
-            print("\n Detected changes in core/shared logic")
-            return "Core"
-    return detect_language(repo_path)
+        if (
+            file == "release-cli.py"
+            or file.startswith("core/")
+            or file.startswith(".github/workflows/")
+        ):
+            return "core"
+
+    return detect_language(repo_path).strip().lower()
 
 def run_release(lang: str):
     if lang not in LANGUAGE_COMMANDS:
@@ -55,11 +69,13 @@ def run_release(lang: str):
 def main():
     parser = argparse.ArgumentParser(description="Semantic Release CLI Tool")
     parser.add_argument("repo_path", help="Path to the project directory")
-
+    parser.add_argument("--run", action="store_true", help="Run release for detected language")
+    
     args = parser.parse_args()
-    lang = detect_language(args.repo_path)
-    print(f"language={lang}")
-    run_release(lang)
+    lang = detect_scope(args.repo_path)
+    print(f"language={lang}") 
+    if args.run:
+        run_release(lang)
 
 if __name__ == "__main__":
     main()
