@@ -1,3 +1,14 @@
+## [1.1.2-develop.6](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.1.2-develop.5...core-v1.1.2-develop.6) (2025-06-01)
+
+
+### Bug Fixes
+
+* **core:** test CLI detection ([7487a70](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/7487a70e6ef432add1a1dde85af7dc2827b93daf))
+* **core:** test CLI detection ([060d774](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/060d774381939553ba51445fcf82211978fe50c6))
+* **core:** update ([f135145](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/f1351454969de473bb490f3db0b6b584eab6a3fb))
+* **js:** force JS trigger ([4e5533e](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/4e5533e4366033fe878d4d333fe6056d1be20eb8))
+* **js:** test detection ([8e11499](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/8e11499f2c6facabff0f3458529c4240a0255663))
+
 ## [1.1.2-develop.5](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.1.2-develop.4...core-v1.1.2-develop.5) (2025-06-01)
 
 
