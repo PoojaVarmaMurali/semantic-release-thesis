@@ -1,3 +1,18 @@
+## [1.1.2-develop.10](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.1.2-develop.9...core-v1.1.2-develop.10) (2025-06-01)
+
+
+### Bug Fixes
+
+* added npm dep for java ([ad10a2c](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/ad10a2c89a1130eb3f41627e172e464c41bd3150))
+* **java:** fixed path ([9c4c1e0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/9c4c1e082d143253ae1d530f22165a3e6a1bf03a))
+* **java:** testing java cli ([bdee7c2](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/bdee7c2ba1112574875f29efcbc245a78463e8f1))
+* **java:** testing java cli ([d25822f](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/d25822fadb5b9a76f6bad75c7aac353f7c759a09))
+* **js:** tesing js cli ([87308b0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/87308b0a6a5d8ba0b3c41c3d7b156988ebbfc680))
+* modified logic ([94f038f](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/94f038fc43e77eec5e1b697492d75da7c05bf03e))
+* **python:** testing py cli ([078f40c](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/078f40c9503d21df1d60a49fe00cafcfc7139ff6))
+* testing java cli ([38d4886](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/38d488636c85328b0fa0e2d992b6c8b5b0897355))
+* testing java cli ([2e6910f](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/2e6910faee9c86b061160f46ff260744331405a7))
+
 ## [1.1.2-develop.9](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.1.2-develop.8...core-v1.1.2-develop.9) (2025-06-01)
 
 
