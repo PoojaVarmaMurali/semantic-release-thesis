@@ -53,7 +53,7 @@ def detect_scope(repo_path: str) -> str:
         if (
             file == "release-cli.py"
             or file.startswith("core/")
-            or file.startswith(".github/workflows/")
+            or file.startswith(".github/workflows")
         ):
             return "core"
         
@@ -101,4 +101,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-# test
