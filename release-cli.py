@@ -50,19 +50,22 @@ def detect_scope(repo_path: str) -> str:
     changed_files = [f.strip().lstrip("./") for f in changed_files]
 
     for file in changed_files:
-        if (
-            file == "release-cli.py"
-            or file.startswith("core/")
-            or file.startswith(".github/workflows") #fixed path
-        ):
+        normalized = file.strip().lstrip("./")
+
+        if normalized == "release-cli.py":
             return "core"
-        
-        elif file.startswith("js-service/"):
+
+        top_dir = normalized.split('/')[0]
+
+        if top_dir in {"core", ".github"}:
+            return "core"
+        elif top_dir == "js-service":
             return "javascript"
-        elif file.startswith("python-service/"):
+        elif top_dir == "python-service":
             return "python"
-        elif file.startswith("java-service/"):
-         return "java"
+        elif top_dir == "java-service":
+            return "java"
+
 
     return detect_language(repo_path).strip().lower()
 
