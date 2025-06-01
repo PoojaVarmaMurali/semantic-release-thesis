@@ -136,7 +136,7 @@ jobs:
 
       - name: Install JS Dev Dependencies
         run: npm install
-        working-directory: js-service
+        working-directory: java-service
         
       - name: Run Java Release
         run: npx semantic-release
