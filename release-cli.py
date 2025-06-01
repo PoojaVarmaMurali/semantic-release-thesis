@@ -49,21 +49,22 @@ def detect_scope(repo_path: str) -> str:
     # Normalize paths to avoid relative issues
     changed_files = [f.strip().lstrip("./") for f in changed_files]
 
+    top_dirs = set()
     for file in changed_files:
         normalized = file.strip().lstrip("./")
 
-        if normalized == "release-cli.py":
+        if normalized == "release-cli.py" or normalized.startswith(".github/") or normalized.startswith("core/"):
             return "core"
 
         top_dir = normalized.split('/')[0]
+        top_dirs.add(top_dir)
 
-        if top_dir in {"core", ".github"}:
-            return "core"
-        elif top_dir == "js-service":
+        
+        if "js-service" in top_dirs:
             return "javascript"
-        elif top_dir == "python-service":
+        elif "python-service" in top_dirs:
             return "python"
-        elif top_dir == "java-service":
+        elif "java-service" in top_dirs:
             return "java"
 
 
