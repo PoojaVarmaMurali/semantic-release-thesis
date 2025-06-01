@@ -1,3 +1,16 @@
+# [1.5.0-develop.10](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.5.0-develop.9...py-v1.5.0-develop.10) (2025-06-01)
+
+
+### Bug Fixes
+
+* **core:** Corrected spelling ([0058dc3](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/0058dc32e602818953cf6e4450c4ca5ba0929232))
+* **js:** dummy test for js release ([08df39d](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/08df39dc669429bdde55708b235e641210bd47f4))
+* **js:** dummy test for js release ([d3d4a50](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/d3d4a50e9ffd1dce818f5492f025c756a09e719e))
+* **js:** force JS trigger ([4e5533e](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/4e5533e4366033fe878d4d333fe6056d1be20eb8))
+* **js:** force JS trigger ([9f6ea89](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/9f6ea899f552558c1ee946ad73e273681b8949f9))
+* **js:** force JS trigger ([44e1d50](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/44e1d50e5098f691324591c42124044f937c9415))
+* **js:** testing js release ([60db961](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/60db961a2b94a4bbd984377b6c1d57c4720227fd))
+
 # [1.5.0-develop.9](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.5.0-develop.8...py-v1.5.0-develop.9) (2025-06-01)
 
 
