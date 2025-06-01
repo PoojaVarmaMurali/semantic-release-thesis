@@ -31,7 +31,7 @@ def detect_scope(repo_path: str) -> str:
         print(f"Error detecting changed files: {e}")
         return detect_language(repo_path).strip().lower()
 
-    print("\n📄 Changed files:")
+    print("\n Changed files:")
     for f in changed_files:
         print(f" - {f}")
 
@@ -74,7 +74,7 @@ def main():
     parser.add_argument("--run", action="store_true", help="Run release for detected language")
     
     args = parser.parse_args()
-    lang = detect_scope(args.repo_path)
+    lang = detect_scope(args.repo_path).strip().lower()
     print(f"language={lang}") 
     if args.run:
         run_release(lang)
