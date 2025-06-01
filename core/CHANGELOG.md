@@ -1,3 +1,10 @@
+## [1.1.2-develop.4](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.1.2-develop.3...core-v1.1.2-develop.4) (2025-06-01)
+
+
+### Bug Fixes
+
+* **js:** force JS trigger ([44e1d50](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/44e1d50e5098f691324591c42124044f937c9415))
+
 ## [1.1.2-develop.3](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.1.2-develop.2...core-v1.1.2-develop.3) (2025-06-01)
 
 
