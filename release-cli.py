@@ -24,6 +24,7 @@ LANGUAGE_COMMANDS = {
 
 def detect_scope(repo_path: str) -> str:
     try:
+        # Get the latest 2 non-merge commits
         commits = subprocess.check_output(
             ["git", "rev-list", "--no-merges", "-n", "2", "HEAD"]
         ).decode().splitlines()
