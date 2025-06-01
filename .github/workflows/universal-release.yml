@@ -47,7 +47,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: Debug Output
-        run: echo "🔁 Language was ${{ steps.detect.outputs.language }}"
+        run: echo "Language was ${{ steps.detect.outputs.language }}"
 
 
   release-js:
