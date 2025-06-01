@@ -1,3 +1,11 @@
+## [1.1.2-develop.8](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.1.2-develop.7...core-v1.1.2-develop.8) (2025-06-01)
+
+
+### Bug Fixes
+
+* **core:** use robust detection for non-merge commits ([7df8148](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/7df81483f9cccc5c97f6c831b5b4ffe4ba15d48b))
+* **core:** use robust detection for non-merge commits ([be72c52](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/be72c52a01a23c1a2b7d3c4cc6748576e079cffb))
+
 ## [1.1.2-develop.7](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.1.2-develop.6...core-v1.1.2-develop.7) (2025-06-01)
 
 
