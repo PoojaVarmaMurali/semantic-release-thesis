@@ -133,6 +133,10 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
+
+      - name: Install JS Dev Dependencies
+        run: npm install
+        working-directory: js-service
         
       - name: Run Java Release
         run: npx semantic-release
