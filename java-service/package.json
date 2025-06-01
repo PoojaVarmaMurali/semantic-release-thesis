@@ -1,6 +1,6 @@
 {
   "name": "java-service-release",
-  "description": "Semantic release setup for Java service",
+  "description": "Semantic release setup - Java service",
   "scripts": {
     "release": "semantic-release"
   },
@@ -15,3 +15,4 @@
     "semantic-release": "^21.0.7"
   }
 }
+ 
