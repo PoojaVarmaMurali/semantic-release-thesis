@@ -25,7 +25,7 @@ LANGUAGE_COMMANDS = {
 def detect_scope(repo_path: str) -> str:
     try:
         changed_files = subprocess.check_output(
-            ["git", "diff", "--name-only", "HEAD^"]
+            ["git", "diff", "--name-only", "HEAD~1"]
         ).decode().splitlines()
     except subprocess.CalledProcessError as e:
         print(f"Error detecting changed files: {e}")
