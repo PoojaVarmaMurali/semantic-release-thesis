@@ -1,3 +1,12 @@
+# [1.5.0-develop.17](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.5.0-develop.16...py-v1.5.0-develop.17) (2025-06-01)
+
+
+### Bug Fixes
+
+* added npm dep for java ([ad10a2c](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/ad10a2c89a1130eb3f41627e172e464c41bd3150))
+* **java:** testing java cli ([bdee7c2](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/bdee7c2ba1112574875f29efcbc245a78463e8f1))
+* **java:** testing java cli ([d25822f](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/d25822fadb5b9a76f6bad75c7aac353f7c759a09))
+
 # [1.5.0-develop.16](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.5.0-develop.15...py-v1.5.0-develop.16) (2025-06-01)
 
 
