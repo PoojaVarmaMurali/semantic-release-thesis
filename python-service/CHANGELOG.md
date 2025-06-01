@@ -1,3 +1,11 @@
+# [1.5.0-develop.18](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.5.0-develop.17...py-v1.5.0-develop.18) (2025-06-01)
+
+
+### Bug Fixes
+
+* **java:** fixed path ([9c4c1e0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/9c4c1e082d143253ae1d530f22165a3e6a1bf03a))
+* testing java cli ([2e6910f](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/2e6910faee9c86b061160f46ff260744331405a7))
+
 # [1.5.0-develop.17](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.5.0-develop.16...py-v1.5.0-develop.17) (2025-06-01)
 
 
