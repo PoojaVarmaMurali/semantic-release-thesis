@@ -1,3 +1,12 @@
+# [1.5.0-develop.16](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.5.0-develop.15...py-v1.5.0-develop.16) (2025-06-01)
+
+
+### Bug Fixes
+
+* **js:** tesing js cli ([87308b0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/87308b0a6a5d8ba0b3c41c3d7b156988ebbfc680))
+* minor update ([78adcb8](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/78adcb87e0786dd68503ea8137aa556f9a0aad57))
+* **python:** testing py cli ([078f40c](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/078f40c9503d21df1d60a49fe00cafcfc7139ff6))
+
 # [1.5.0-develop.15](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.5.0-develop.14...py-v1.5.0-develop.15) (2025-06-01)
 
 
