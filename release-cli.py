@@ -76,7 +76,9 @@ def main():
     args = parser.parse_args()
     lang = detect_scope(args.repo_path).strip().lower()
     print(f"language={lang}") 
+
     if args.run:
+        print(f"DEBUG: lang={lang}, available keys={list(LANGUAGE_COMMANDS.keys())}")
         run_release(lang)
 
 if __name__ == "__main__":

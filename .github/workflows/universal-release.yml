@@ -6,9 +6,9 @@ on:
       - main
       - develop
     paths:
-    - 'js-services/**'
-    - 'python-services/**'
-    - 'java-services/**'
+    - 'js-service/**'
+    - 'python-service/**'
+    - 'java-service/**'
     - 'core/**'
     - 'release-cli.py'
     - '.github/workflows/universal-release.yml'
@@ -55,6 +55,7 @@ jobs:
     runs-on: ubuntu-latest 
     needs: detect-changed-folder
     steps:
+
       - name: Checkout code
         uses: actions/checkout@v4
         with:
