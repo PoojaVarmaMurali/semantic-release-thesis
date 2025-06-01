@@ -8,7 +8,7 @@ LANGUAGE_COMMANDS = {
         "path": "python-service",
         "run": "npx semantic-release"
     },
-    "javaScript": {
+    "javascript": {
         "path": "js-service",
         "run": "npx semantic-release"
     },
@@ -49,6 +49,8 @@ def detect_scope(repo_path: str) -> str:
     return detect_language(repo_path).strip().lower()
 
 def run_release(lang: str):
+    print(f"DEBUG: lang={lang}, available keys={list(LANGUAGE_COMMANDS.keys())}")
+
     if lang not in LANGUAGE_COMMANDS:
         print(f" No release flow defined for language: {lang}")
         sys.exit(1)
