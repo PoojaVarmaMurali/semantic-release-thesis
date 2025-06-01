@@ -1,13 +1,4 @@
-# [1.1.0-develop.2](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.1.0-develop.1...core-v1.1.0-develop.2) (2025-06-01)
-
-
-### Bug Fixes
-
-* **js:** test JS CI release ([bd4aabe](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/bd4aabe8f4a25c9083571fe6f168fa2fce347559))
-* **python:** test python release ([4dd45d2](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/4dd45d2fc26223100daa82262fe29092c2ff0ae8))
-* **python:** testing python release ([eb9a80b](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/eb9a80b4e71d87d36f6aa7212768e0bad9bb81a3))
-
-# [1.1.0-develop.1](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.0.0...core-v1.1.0-develop.1) (2025-06-01)
+## [1.1.1](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.1.0...core-v1.1.1) (2025-06-01)
 
 
 ### Bug Fixes
@@ -21,9 +12,15 @@
 * **core:** trigger release from CLI change ([28d135f](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/28d135f025b50a9379282d9152abc66692abb05e))
 * **core:** updated workflow and release-cli ([3235e4a](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/3235e4af39a84d1030478b4085fe4984a30dbeb4))
 * corrected path ([3bba7cc](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/3bba7cc66b52014d0d893f3bf9cc915ada6fadfb))
-* testing language detection ([086cee2](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/086cee29fc6a9f3ce0b3bd64c4601d25fee57ade))
 * tweeked pythong config ([422e9ec](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/422e9ec22817df96cede5f95abc671613802af61))
 * tweeked pythong config ([cf53715](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/cf53715f8ab5c0f4415d88da18311f11492c447c))
+
+# [1.1.0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.0.0...core-v1.1.0) (2025-05-31)
+
+
+### Bug Fixes
+
+* testing language detection ([086cee2](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/086cee29fc6a9f3ce0b3bd64c4601d25fee57ade))
 * tweeked root folder content ([632d97d](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/632d97d67de64c322e7d06cf071cd487e6b44e98))
 * workflow rename ([471d069](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/471d069de8bc851e2767cd8a853967033c3d65b6))
 

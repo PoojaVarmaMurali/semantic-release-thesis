@@ -1,3 +1,37 @@
+# [1.3.0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/js-v1.2.0...js-v1.3.0) (2025-05-27)
+
+
+### Bug Fixes
+
+* improve language detection accuracy with more sample files ([736bcd1](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/736bcd1624ab9942c2653d0e51317de6677ebd2f))
+* **python:** fixed the path to working directroy ([3e885f2](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/3e885f28b386363ceb4f5b40811bda2385dd6e4a))
+* **python:** regenerate changelog and package folder ([72b4c65](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/72b4c6500672dac19dd333aaf04f83867b5ff394))
+* **python:** restore init and changelog for semantic release ([854edcc](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/854edcc14fd8aa1bdc52f08b387e6e2c27ea4ec6))
+* testing language detection ([086cee2](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/086cee29fc6a9f3ce0b3bd64c4601d25fee57ade))
+* workflow rename ([471d069](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/471d069de8bc851e2767cd8a853967033c3d65b6))
+
+
+### Features
+
+* **core:** minor refinment ([5dcafdd](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/5dcafdd3d7713be530342a93a50b09dd158779ad))
+* **core:** minor refinment ([f2174f2](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/f2174f24a8dda178a49afc6863fbe732b906ce9e))
+* **core:** move shared logic to core and enable independent versioning ([4cfe8a2](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/4cfe8a20bc6c890dcb9372466006cbec8edd4f8b))
+* **core:** move shared logic to core and enable independent versioning ([43f9e3e](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/43f9e3e42cad1b083eece3dfa103cd1b3ad95862))
+* **core:** MR ([2a97ed0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/2a97ed02941b9ea3d4783695c1ac54fd789814aa))
+* **core:** npm update ([59aa094](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/59aa094ab855f216bbb7eb00aae74402923c27f3))
+* **core:** npm update ([5b9d932](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/5b9d9320839db3bc1baf6d293561215a4d8f33f5))
+* **java:** dry run on develop ([80f2fbf](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/80f2fbf5d177356a5133f053eb461d526d569f0e))
+* **java:** test dry run on develop ([0c20491](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/0c204912bf308702257b245287673f80026cde3a))
+* **java:** testing main release ([5bddbcb](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/5bddbcb7431a1ee8de5e8e93c2193bc13cb67320))
+* **java:** trigger Maven based version bump ([df09e90](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/df09e909cd6f84b873e0e4c75e00e3942ece6ebc))
+* **java:** trigger Maven based version bump ([48860fb](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/48860fb6c91804c4fe4bebc9dd79c3679f942d09))
+* **python:** fixed paths ([095c091](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/095c0916e8ab9a45d4b2b26f5bdea91303531c21))
+* **python:** fixed paths ([59b20e7](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/59b20e7018a51781f9ee57a09797e9b305f52e9e))
+* **python:** set up semantic release with working config ([d0ef2fb](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/d0ef2fb82699d1cb416361abf34f8826ef6c25eb))
+* **python:** set up semantic release with working config ([21b7bef](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/21b7bef032735081451de4d774e62c17a9aaac28))
+* **python:** Upate ([74ba09a](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/74ba09a8081d9b9dab0c7a2d76a288e266f9c4e1))
+* **python:** Update ([54f8326](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/54f8326cee2503a20b97942691b7cfeb85fc4186))
+
 # [1.2.0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/js-v1.1.0...js-v1.2.0) (2025-05-23)
 
 

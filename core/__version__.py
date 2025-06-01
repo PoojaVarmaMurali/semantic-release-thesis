@@ -1,1 +1,1 @@
-__version__ = "1.1.0-develop.2" # Initial version for core module
+__version__ = "1.1.1" # Initial version for core module
