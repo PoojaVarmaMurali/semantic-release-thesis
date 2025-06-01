@@ -24,8 +24,14 @@ LANGUAGE_COMMANDS = {
 
 def detect_scope(repo_path: str) -> str:
     try:
+        latest_commit = subprocess.check_output(
+             ["git", "rev-list", "--no-merges", "-n", "1", "HEAD"]
+        ).decode().strip()
+        previous_commit = subprocess.check_output(
+            ["git", "rev-list", "--no-merges", "-n", "1", f"{latest_commit}^"]
+        ).decode().strip()
         changed_files = subprocess.check_output(
-            ["git", "diff", "--name-only", "HEAD^", "HEAD"]
+            ["git", "diff", "--name-only",  previous_commit, latest_commit]
         ).decode().splitlines()
     except subprocess.CalledProcessError as e:
         print(f"Error detecting changed files: {e}")
