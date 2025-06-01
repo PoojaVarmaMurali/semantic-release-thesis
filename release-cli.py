@@ -79,7 +79,7 @@ def main():
 
     args = parser.parse_args()
     lang = detect_scope(args.repo_path)
-    print(f"language={lang}")
+    print(f"language={lang.lower()}")
     run_release(lang)
 
 if __name__ == "__main__":

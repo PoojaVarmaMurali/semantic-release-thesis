@@ -136,7 +136,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
   release-core:
-    if: needs.detect-changed-folder.outputs.language == 'Core'
+    if: needs.detect-changed-folder.outputs.language == 'core'
     runs-on: ubuntu-latest 
     needs: detect-changed-folder
     steps:
