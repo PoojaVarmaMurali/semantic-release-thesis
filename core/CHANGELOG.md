@@ -1,3 +1,20 @@
+## [1.1.1](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.1.0...core-v1.1.1) (2025-06-01)
+
+
+### Bug Fixes
+
+* **core:** debug ([73fdd5b](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/73fdd5b069d31262a989033d3e7d4b24d39d9c12))
+* **core:** ensure CLI changes trigger core release ([6bebf54](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/6bebf547ef51b724256e957ce3ed3b6e07f3d84b))
+* **core:** fixed case ([75b83bf](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/75b83bff1215dcf0d408a047e2491bcd75536a94))
+* **core:** fixed case ([18132e4](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/18132e42ad3db4db4ecd082866f296b2a1e741fc))
+* **core:** force core release trigger from CLI change ([fda68cd](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/fda68cda54754bb39f3eb2a3ed763b722cdf957b))
+* **core:** Modified release-cli-py ([e52e6d9](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/e52e6d9c06cdaf080932934e2c0b84b33a183bc9))
+* **core:** trigger release from CLI change ([28d135f](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/28d135f025b50a9379282d9152abc66692abb05e))
+* **core:** updated workflow and release-cli ([3235e4a](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/3235e4af39a84d1030478b4085fe4984a30dbeb4))
+* corrected path ([3bba7cc](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/3bba7cc66b52014d0d893f3bf9cc915ada6fadfb))
+* tweeked pythong config ([422e9ec](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/422e9ec22817df96cede5f95abc671613802af61))
+* tweeked pythong config ([cf53715](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/cf53715f8ab5c0f4415d88da18311f11492c447c))
+
 # [1.1.0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.0.0...core-v1.1.0) (2025-05-31)
 
 
