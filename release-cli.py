@@ -46,7 +46,7 @@ def detect_scope(repo_path: str) -> str:
             or file.startswith("core/")
             or file.startswith(".github/workflows/")
         ):
-            print("\n🔍 Detected changes in core/shared logic.")
+            print("\n Detected changes in core/shared logic.")
             print("language=Core")
             return "Core"
 
