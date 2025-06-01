@@ -4,19 +4,19 @@ import sys      #exits the script with custom exit code/messages
 from core.language_detector.detect_language import detect_language      #custom function to detect the project language
 
 LANGUAGE_COMMANDS = {
-    "Python": {
+    "python": {
         "path": "python-service",
         "run": "npx semantic-release"
     },
-    "JavaScript": {
+    "javaScript": {
         "path": "js-service",
         "run": "npx semantic-release"
     },
-    "Java": {
+    "java": {
         "path": "java-service",
         "run": "npx semantic-release"
     },
-    "Core": {
+    "core": {
         "path": "core",
         "run": "npx semantic-release"
     }
@@ -73,6 +73,7 @@ def main():
     
     args = parser.parse_args()
     lang = detect_scope(args.repo_path)
+    print(f"language={lang}") 
     if args.run:
         run_release(lang)
 
