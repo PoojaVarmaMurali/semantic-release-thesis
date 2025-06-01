@@ -1,3 +1,10 @@
+# [1.5.0-develop.13](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.5.0-develop.12...py-v1.5.0-develop.13) (2025-06-01)
+
+
+### Bug Fixes
+
+* **core:** test CLI detection ([060d774](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/060d774381939553ba51445fcf82211978fe50c6))
+
 # [1.5.0-develop.12](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.5.0-develop.11...py-v1.5.0-develop.12) (2025-06-01)
 
 
