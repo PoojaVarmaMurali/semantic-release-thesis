@@ -1,3 +1,10 @@
+## [1.1.2-develop.3](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.1.2-develop.2...core-v1.1.2-develop.3) (2025-06-01)
+
+
+### Bug Fixes
+
+* **js:** testing js release ([60db961](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/60db961a2b94a4bbd984377b6c1d57c4720227fd))
+
 ## [1.1.2-develop.2](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.1.2-develop.1...core-v1.1.2-develop.2) (2025-06-01)
 
 
