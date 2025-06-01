@@ -25,7 +25,7 @@ LANGUAGE_COMMANDS = {
 def detect_scope(repo_path: str) -> str:
     try:
         changed_files = subprocess.check_output(
-            ["git", "diff", "--name-only", "HEAD~1"]
+            ["git", "diff", "--name-only", "HEAD^", "HEAD"]
         ).decode().splitlines()
     except subprocess.CalledProcessError as e:
         print(f"Error detecting changed files: {e}")
@@ -45,6 +45,13 @@ def detect_scope(repo_path: str) -> str:
             or file.startswith(".github/workflows/")
         ):
             return "core"
+        
+        elif file.startswith("js-service/"):
+            return "javascript"
+        elif file.startswith("python-service/"):
+            return "python"
+        elif file.startswith("java-service/"):
+         return "java"
 
     return detect_language(repo_path).strip().lower()
 
