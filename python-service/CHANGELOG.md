@@ -1,3 +1,10 @@
+# [1.5.0-develop.11](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.5.0-develop.10...py-v1.5.0-develop.11) (2025-06-01)
+
+
+### Bug Fixes
+
+* **js:** test detection ([8e11499](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/8e11499f2c6facabff0f3458529c4240a0255663))
+
 # [1.5.0-develop.10](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.5.0-develop.9...py-v1.5.0-develop.10) (2025-06-01)
 
 
