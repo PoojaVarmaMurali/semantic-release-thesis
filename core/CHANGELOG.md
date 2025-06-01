@@ -1,3 +1,12 @@
+## [1.1.2-develop.2](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.1.2-develop.1...core-v1.1.2-develop.2) (2025-06-01)
+
+
+### Bug Fixes
+
+* **core:** Corrected spelling ([0058dc3](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/0058dc32e602818953cf6e4450c4ca5ba0929232))
+* **js:** dummy test for js release ([08df39d](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/08df39dc669429bdde55708b235e641210bd47f4))
+* **js:** dummy test for js release ([d3d4a50](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/d3d4a50e9ffd1dce818f5492f025c756a09e719e))
+
 ## [1.1.2-develop.1](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.1.1...core-v1.1.2-develop.1) (2025-06-01)
 
 
