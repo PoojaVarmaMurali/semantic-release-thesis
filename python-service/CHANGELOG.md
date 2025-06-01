@@ -1,3 +1,17 @@
+# [1.5.0-develop.14](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.5.0-develop.13...py-v1.5.0-develop.14) (2025-06-01)
+
+
+### Bug Fixes
+
+* **core:** test CLI detection ([7487a70](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/7487a70e6ef432add1a1dde85af7dc2827b93daf))
+* **core:** use robust detection for non-merge commits ([7df8148](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/7df81483f9cccc5c97f6c831b5b4ffe4ba15d48b))
+* **core:** use robust detection for non-merge commits ([be72c52](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/be72c52a01a23c1a2b7d3c4cc6748576e079cffb))
+* **js:** correct releaserc config for semantic-release ([e2b6dab](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/e2b6dabafd080a51a93fa511c0966e9fb488cded))
+* **js:** package update ([c474968](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/c4749682068310d247695b29ecf50d43e15a849a))
+* **js:** test CLI detection ([9f99baf](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/9f99baf9be5336eaa621a0ed83a54a39a58402d1))
+* **js:** test CLI detection ([1701d9c](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/1701d9c4bea5c6dbbc9e75b98be5c800562b5f8e))
+* **js:** test js release trigger ([bba1206](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/bba1206e9b97342cb80e36164b48b13a5a15e6eb))
+
 # [1.5.0-develop.13](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.5.0-develop.12...py-v1.5.0-develop.13) (2025-06-01)
 
 
