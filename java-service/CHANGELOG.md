@@ -1,3 +1,11 @@
+# [1.3.0-develop.2](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/java-v1.3.0-develop.1...java-v1.3.0-develop.2) (2025-06-01)
+
+
+### Bug Fixes
+
+* modified logic ([94f038f](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/94f038fc43e77eec5e1b697492d75da7c05bf03e))
+* updated pacakge.json ([f65c8f2](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/f65c8f27f525b70fe47a90b037c06e6e576d1b57))
+
 # [1.3.0-develop.1](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/java-v1.2.0...java-v1.3.0-develop.1) (2025-06-01)
 
 
