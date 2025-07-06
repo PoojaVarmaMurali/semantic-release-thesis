@@ -22,7 +22,7 @@
       "@semantic-release/exec",
       {
         "prepareCmd": "sed -i 's/__version__ = \\\".*\\\"/__version__ = \\\"${nextRelease.version}\\\"/' __version__.py",
-        "publishCmd": "python ../core/parse_commit.py && python ../core/generate_release_notes.py"
+        "publishCmd": "python3 parse_commit.py && python3 generate_release_notes.py"
       }
     ],
     [
