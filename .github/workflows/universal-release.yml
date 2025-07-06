@@ -81,7 +81,14 @@ jobs:
         working-directory: js-service
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          COHERE_API_KEY: ${{ secrets.COHERE_API_KEY }}
           
+      - name: Upload Release Notes Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: RELEASE_NOTES.md
+          path: RELEASE_NOTES.md
+
   release-python:
     if: needs.detect-changed-folder.outputs.language == 'python'
     runs-on: ubuntu-latest 
@@ -125,6 +132,13 @@ jobs:
         working-directory: python-service
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          COHERE_API_KEY: ${{ secrets.COHERE_API_KEY }}
+
+      - name: Upload Release Notes Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: RELEASE_NOTES.md
+          path: RELEASE_NOTES.md
        
   release-java:
     if: needs.detect-changed-folder.outputs.language == 'java'
@@ -154,6 +168,13 @@ jobs:
         working-directory: java-service
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          COHERE_API_KEY: ${{ secrets.COHERE_API_KEY }}
+
+      - name: Upload Release Notes Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: RELEASE_NOTES.md
+          path: RELEASE_NOTES.md
 
   release-core:
     if: needs.detect-changed-folder.outputs.language == 'core'
@@ -183,3 +204,10 @@ jobs:
         working-directory: core
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          COHERE_API_KEY: ${{ secrets.COHERE_API_KEY }}
+
+      - name: Upload Release Notes Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: RELEASE_NOTES.md
+          path: RELEASE_NOTES.md

@@ -17,7 +17,7 @@
       "@semantic-release/exec",
       {
         "prepareCmd": "sed -i 's/\"version\": \".*\"/\"version\": \"${nextRelease.version}\"/' package.json",
-        "publishCmd": "python ../core/generate_release_notes.py"
+        "publishCmd": "python ../core/parse_commit.py && python ../core/generate_release_notes.py"
       }
     ],
     ["@semantic-release/npm", {"npmPublish": false }],
