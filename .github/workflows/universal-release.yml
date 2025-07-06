@@ -12,6 +12,7 @@ on:
     - 'core/**'
     - 'release-cli.py'
     - '.github/workflows/universal-release.yml'
+    - '.github/actions/setup-python-deps/action.yml'
 
   workflow_dispatch:
 
@@ -45,6 +46,7 @@ jobs:
           echo "language=$lang" >> $GITHUB_OUTPUT
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          COHERE_API_KEY: ${{ secrets.COHERE_API_KEY }}
 
       - name: Debug Output
         run: echo "Language was ${{ steps.detect.outputs.language }}"
@@ -70,6 +72,9 @@ jobs:
       - name: Install JS Dev Dependencies
         run: npm install
         working-directory: js-service
+
+      - name: Setup Python Dependencies
+        uses: ./.github/actions/setup-python-deps
         
       - name: Run JS Release
         run: npx semantic-release
@@ -112,6 +117,9 @@ jobs:
           pip install -e .[dev]
         working-directory: python-service
 
+      - name: Setup Python Dependencies
+        uses: ./.github/actions/setup-python-deps
+
       - name: Run Python Release
         run: npx semantic-release
         working-directory: python-service
@@ -137,6 +145,9 @@ jobs:
       - name: Install JS Dev Dependencies
         run: npm install
         working-directory: java-service
+
+      - name: Setup Python Dependencies
+        uses: ./.github/actions/setup-python-deps
         
       - name: Run Java Release
         run: npx semantic-release
@@ -163,6 +174,9 @@ jobs:
       - name: Install Core Dev dependencies
         run: npm install 
         working-directory: core
+
+      - name: Setup Python Dependencies
+        uses: ./.github/actions/setup-python-deps
             
       - name: Run Core Release
         run: npx semantic-release

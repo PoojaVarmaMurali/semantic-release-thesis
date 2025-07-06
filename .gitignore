@@ -26,6 +26,7 @@ target/
 .idea/
 *.iml
 
+
 # Logs and temp files
 *.log
 *.swp
@@ -43,5 +44,7 @@ thesis notes.md
 coverage/
 release-notes.md
 
-
+#autogeberated files
+commits.json
+RELEASE_NOTES.md
 

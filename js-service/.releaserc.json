@@ -13,6 +13,13 @@
     ["@semantic-release/commit-analyzer", { "preset": "conventionalcommits" }],
     "@semantic-release/release-notes-generator",
     ["@semantic-release/changelog", { "changelogFile": "CHANGELOG.md" }],
+    [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "sed -i 's/\"version\": \".*\"/\"version\": \"${nextRelease.version}\"/' package.json",
+        "publishCmd": "python ../core/generate_release_notes.py"
+      }
+    ],
     ["@semantic-release/npm", {"npmPublish": false }],
     ["@semantic-release/git", {
       "assets": ["CHANGELOG.md", "package.json"],

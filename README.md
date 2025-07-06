@@ -33,6 +33,39 @@
 - Use scopes for clarity in multi-language repos  
 - Avoid vague messages like `fix: stuff` or `update`  
 
+### Folder structure and brief
+
 Javascript:
 
 All Semantic Release config and dependencies for JavaScript live inside js-service/.
+
+Java:
+
+All Semantic Release config and dependencies for JavaScript live inside java-service/.
+
+Python:
+
+All Semantic Release config and dependencies for JavaScript live inside python-service/.
+
+Core:
+
+This folder containes all the shared files/scripts and configurations. 
+
+.github/workflows/universal-release.yml --> This is the universal workflow for all the languages and the shared repository.
+
+
+
+### Release Notes Generation
+
+This project uses automated scripts to generate release notes and commit metadata:
+
+- `commits.json`: created by `parse_commit.py`
+- `RELEASE_NOTES.md`: created by `generate_release_notes.py`
+
+These files are **ignored in version control** (`.gitignore`) and are regenerated automatically during CI/CD workflows.
+
+ **Do not commit these files manually.**
+
+If you need to see the generated release notes:
+- Look at the GitHub Actions workflow artifacts.
+- Run the scripts locally if needed.
