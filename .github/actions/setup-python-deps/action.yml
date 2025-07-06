@@ -11,3 +11,4 @@ runs:
 
     - name: Install Python dependencies
       run: pip install cohere
+      shell: bash
