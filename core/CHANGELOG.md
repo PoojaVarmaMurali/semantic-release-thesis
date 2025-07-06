@@ -1,3 +1,10 @@
+## [1.1.2-develop.11](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.1.2-develop.10...core-v1.1.2-develop.11) (2025-07-06)
+
+
+### Bug Fixes
+
+* updated pacakge.json ([f65c8f2](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/f65c8f27f525b70fe47a90b037c06e6e576d1b57))
+
 ## [1.1.2-develop.10](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.1.2-develop.9...core-v1.1.2-develop.10) (2025-06-01)
 
 
