@@ -1,3 +1,10 @@
+# [1.2.0-develop.4](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.2.0-develop.3...core-v1.2.0-develop.4) (2025-07-07)
+
+
+### Features
+
+* added release notes artifact ([0625d73](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/0625d73421980c66a3ab0800a3a00fc143ea600c))
+
 # [1.2.0-develop.3](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.2.0-develop.2...core-v1.2.0-develop.3) (2025-07-07)
 
 
