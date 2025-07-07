@@ -1,3 +1,10 @@
+# [1.2.0-develop.2](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.2.0-develop.1...core-v1.2.0-develop.2) (2025-07-07)
+
+
+### Bug Fixes
+
+* modifed version.py ([58badfb](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/58badfb5fd592f1f67a0b75204a13a225559d8d3))
+
 # [1.2.0-develop.1](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.1.2-develop.11...core-v1.2.0-develop.1) (2025-07-06)
 
 
