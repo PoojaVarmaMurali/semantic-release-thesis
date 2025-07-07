@@ -1,3 +1,10 @@
+# [1.2.0-develop.1](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.1.2-develop.11...core-v1.2.0-develop.1) (2025-07-06)
+
+
+### Features
+
+* testing the feature ([0372899](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/0372899513bccaa485d76f5f2e5b19439cacdc0f))
+
 ## [1.1.2-develop.11](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.1.2-develop.10...core-v1.1.2-develop.11) (2025-07-06)
 
 
