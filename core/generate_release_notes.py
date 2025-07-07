@@ -1,7 +1,5 @@
-#!/usr/bin/env python3
 import os
 import json
-import sys
 import cohere
 
 # Load Cohere API key securely from environment variable
@@ -43,19 +41,15 @@ def query_batch(commits, section):
 
 def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    commits_path = os.path.join(script_dir, "commits.json")
-
+    repo_root = os.path.abspath(os.path.join(script_dir, ".."))
+    commits_path = os.path.join(repo_root, "commits.json")
+    release_notes_path = os.path.join(repo_root, "core", "RELEASE_NOTES.md")
 
     if not os.path.exists(commits_path):
-        print("No commits.json found. Skipping release notes generation.")
-        sys.exit(0)
+        raise FileNotFoundError(f"Commits file not found: {commits_path}")
 
     with open(commits_path) as f:
         commits = json.load(f)
-
-    if not commits:
-        print("No commits to process. Skipping release notes generation.")
-        sys.exit(0)
 
     sections = {
         "Features": [],
@@ -69,6 +63,7 @@ def main():
         text = f"{commit['subject']} {commit['body']}"
         sections[category].append(text)
 
+    # Compose new release notes
     markdown = "# Release Notes\n\n"
 
     for section, messages in sections.items():
@@ -79,12 +74,21 @@ def main():
         summary = query_batch(messages, section)
 
         markdown += f"## {section}\n\n"
-        markdown += summary + "\n"
+        markdown += summary + "\n\n"
 
-    with open("RELEASE_NOTES.md", "w") as f:
-        f.write(markdown)
+    # Load existing release notes if any
+    if os.path.exists(release_notes_path):
+        with open(release_notes_path, "r") as f:
+            existing_content = f.read()
+    else:
+        existing_content = ""
 
-    print("✅ Release notes generated: RELEASE_NOTES.md")
+    # Write new release notes with latest at the top
+    with open(release_notes_path, "w") as f:
+        f.write(markdown.strip() + "\n\n")
+        f.write(existing_content.strip())
+
+    print("✅ Release notes updated (prepended) in: RELEASE_NOTES.md")
 
 if __name__ == "__main__":
     main()
