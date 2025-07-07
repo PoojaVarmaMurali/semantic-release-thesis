@@ -1,3 +1,10 @@
+# [1.2.0-develop.3](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.2.0-develop.2...core-v1.2.0-develop.3) (2025-07-07)
+
+
+### Features
+
+* modified commits.json location ([bb5cae7](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/bb5cae7cde3ec92f485bf1b8c4b71009a151217d))
+
 # [1.2.0-develop.2](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.2.0-develop.1...core-v1.2.0-develop.2) (2025-07-07)
 
 
