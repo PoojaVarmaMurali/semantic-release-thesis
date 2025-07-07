@@ -27,7 +27,7 @@
     [
       "@semantic-release/git",
       {
-        "assets": ["CHANGELOG.md", "__version__.py"],
+        "assets": ["CHANGELOG.md", "__version__.py", "RELEASE_NOTES.md"],
         "message": "chore(release): core-v${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
     ],
