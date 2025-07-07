@@ -87,7 +87,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: RELEASE_NOTES.md
-          path: RELEASE_NOTES.md
+          path: "**/RELEASE_NOTES.md"
 
   release-python:
     if: needs.detect-changed-folder.outputs.language == 'python'
@@ -138,7 +138,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: RELEASE_NOTES.md
-          path: RELEASE_NOTES.md
+          path: "**/RELEASE_NOTES.md"
        
   release-java:
     if: needs.detect-changed-folder.outputs.language == 'java'
@@ -174,7 +174,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: RELEASE_NOTES.md
-          path: RELEASE_NOTES.md
+          path: "**/RELEASE_NOTES.md"
 
   release-core:
     if: needs.detect-changed-folder.outputs.language == 'core'
@@ -210,4 +210,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: RELEASE_NOTES.md
-          path: RELEASE_NOTES.md
+          path: "**/RELEASE_NOTES.md"
