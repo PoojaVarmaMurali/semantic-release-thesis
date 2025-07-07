@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import os
 import json
+import sys
 import cohere
 
 # Load Cohere API key securely from environment variable
@@ -46,10 +47,15 @@ def main():
     commits_path = os.path.join(repo_root, "commits.json")
 
     if not os.path.exists(commits_path):
-        raise FileNotFoundError(f"Commits file not found: {commits_path}")
+        print("No commits.json found. Skipping release notes generation.")
+        sys.exit(0)
 
     with open(commits_path) as f:
         commits = json.load(f)
+
+    if not commits:
+        print("No commits to process. Skipping release notes generation.")
+        sys.exit(0)
 
     sections = {
         "Features": [],
