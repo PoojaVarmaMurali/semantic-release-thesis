@@ -1,3 +1,18 @@
+# [1.2.0-develop.5](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.2.0-develop.4...core-v1.2.0-develop.5) (2025-07-07)
+
+
+### Bug Fixes
+
+* Merge branch 'develop' of github.com:PoojaVarmaMurali/semantic-release-thesis into develop ([ff0e324](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/ff0e3242a6ac2620c3ce1e5c026e08c22f92a4c3))
+* updated path ([613d2d6](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/613d2d6335f7a0f6d2904beb4fd7a4eb0236f881))
+* updated path in all releaserc files ([30da102](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/30da1028d113e2d3064d4c94a3db7a66ca556309))
+
+
+### Features
+
+* modified the logic in parse commit ([01ba75c](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/01ba75c7aaad7800d23a918603f46ba9ccf2f601))
+* modified the way release notes gets written ([a015014](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/a015014b56b0177d84888e347bff34dd156dde13))
+
 # [1.2.0-develop.4](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.2.0-develop.3...core-v1.2.0-develop.4) (2025-07-07)
 
 
