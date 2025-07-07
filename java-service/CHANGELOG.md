@@ -1,3 +1,19 @@
+# [1.3.0-develop.3](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/java-v1.3.0-develop.2...java-v1.3.0-develop.3) (2025-07-07)
+
+
+### Bug Fixes
+
+* modifed version.py ([58badfb](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/58badfb5fd592f1f67a0b75204a13a225559d8d3))
+* updated path ([613d2d6](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/613d2d6335f7a0f6d2904beb4fd7a4eb0236f881))
+* updated path in all releaserc files ([30da102](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/30da1028d113e2d3064d4c94a3db7a66ca556309))
+
+
+### Features
+
+* added release notes artifact ([0625d73](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/0625d73421980c66a3ab0800a3a00fc143ea600c))
+* modified commits.json location ([bb5cae7](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/bb5cae7cde3ec92f485bf1b8c4b71009a151217d))
+* testing the feature ([0372899](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/0372899513bccaa485d76f5f2e5b19439cacdc0f))
+
 # [1.3.0-develop.2](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/java-v1.3.0-develop.1...java-v1.3.0-develop.2) (2025-06-01)
 
 
