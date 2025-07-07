@@ -43,8 +43,8 @@ def query_batch(commits, section):
 
 def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    repo_root = os.path.abspath(os.path.join(script_dir, ".."))
-    commits_path = os.path.join(repo_root, "commits.json")
+    commits_path = os.path.join(script_dir, "commits.json")
+
 
     if not os.path.exists(commits_path):
         print("No commits.json found. Skipping release notes generation.")

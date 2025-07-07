@@ -1,6 +1,7 @@
 #Get commits since the last tag, Extraxt their messages and store it in JSON
 import subprocess
 import json
+import os
 
 def get_latest_tag():
     try:
@@ -35,6 +36,9 @@ def get_commits(since_tag=None):
 
 
 if __name__ == "__main__":
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    output_path = os.path.join(script_dir, "commits.json")
+
     tag = get_latest_tag()
     commits = get_commits(tag)
     with open("commits.json", "w") as f:
