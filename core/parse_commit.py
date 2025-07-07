@@ -34,14 +34,15 @@ def get_commits(since_tag=None):
             })
     return commits
 
-
 if __name__ == "__main__":
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    output_path = os.path.join(script_dir, "commits.json")
+    repo_root = os.path.abspath(os.path.join(script_dir, ".."))
+    commits_path = os.path.join(repo_root, "core", "commits.json")
 
     tag = get_latest_tag()
     commits = get_commits(tag)
-    with open("commits.json", "w") as f:
+
+    with open(commits_path, "w") as f:
         json.dump(commits, f, indent=2)
 
-    print(f"Extracted {len(commits)} commits since {tag}")
+    print(f"Extracted {len(commits)} commits since {tag} into {commits_path}")

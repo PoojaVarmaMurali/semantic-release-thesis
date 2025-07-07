@@ -42,8 +42,9 @@ def query_batch(commits, section):
 def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     repo_root = os.path.abspath(os.path.join(script_dir, ".."))
-    commits_path = os.path.join(repo_root, "commits.json")
+    commits_path = os.path.join(repo_root, "core", "commits.json")
     release_notes_path = os.path.join(repo_root, "core", "RELEASE_NOTES.md")
+
 
     if not os.path.exists(commits_path):
         raise FileNotFoundError(f"Commits file not found: {commits_path}")
