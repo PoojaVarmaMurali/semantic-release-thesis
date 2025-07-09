@@ -1,3 +1,11 @@
+# [1.3.0-develop.7](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/java-v1.3.0-develop.6...java-v1.3.0-develop.7) (2025-07-09)
+
+
+### Bug Fixes
+
+* fixed the path ([8f24af0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/8f24af0a45baa3319920ff081dbf86cd090a72e9))
+* Merge branch 'develop' of github.com:PoojaVarmaMurali/semantic-release-thesis into develop ([a2da1d2](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/a2da1d2e31f0610b211774f0420c6d02a4bd9d10))
+
 # [1.3.0-develop.6](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/java-v1.3.0-develop.5...java-v1.3.0-develop.6) (2025-07-09)
 
 
