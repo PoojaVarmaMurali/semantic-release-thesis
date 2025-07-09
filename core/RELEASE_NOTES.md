@@ -1,5 +1,21 @@
 # Release Notes
 
+## 📦 Version 1.2.0-develop.10
+
+### 🐛 Fixes
+
+## Fixes Commits Summary
+
+- ### Change: Updated commits.json path
+    - Reason: The path to the commits.json file was incorrect.
+    - Impact: This fix ensures that the commits data is read from the correct file, enabling accurate processing and analysis.
+
+- ### Change: Testing on the Java folder
+    - Reason: Focused testing on the Java code base.
+    - Impact: This targeted testing approach helps identify and address any issues specific to the Java code, improving the overall quality and stability of the Java-related functionality.
+
+# Release Notes
+
 ## 📦 Version 1.2.0-develop.9
 
 ### 🐛 Fixes

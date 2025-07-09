@@ -1,3 +1,11 @@
+# [1.2.0-develop.10](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.2.0-develop.9...core-v1.2.0-develop.10) (2025-07-09)
+
+
+### Bug Fixes
+
+* testing on java folder ([cf4953e](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/cf4953ea574bc3aa30db41cd918c15b9702b740b))
+* updated commits.json path ([eb309f5](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/eb309f5a37785b8455230fd061643c5cbbb81edb))
+
 # [1.2.0-develop.9](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.2.0-develop.8...core-v1.2.0-develop.9) (2025-07-09)
 
 
