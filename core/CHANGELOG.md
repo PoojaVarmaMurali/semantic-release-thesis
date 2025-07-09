@@ -1,3 +1,11 @@
+# [1.2.0-develop.8](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.2.0-develop.7...core-v1.2.0-develop.8) (2025-07-09)
+
+
+### Bug Fixes
+
+* Merge branch 'develop' of github.com:PoojaVarmaMurali/semantic-release-thesis into develop ([60ac79d](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/60ac79d0ac516b925fe991b13d710896a7d6ad17))
+* testing restructured release notes on java folder ([8b15eeb](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/8b15eeb51e80052ad68e930d6a9dd5391186ab15))
+
 # [1.2.0-develop.7](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.2.0-develop.6...core-v1.2.0-develop.7) (2025-07-09)
 
 

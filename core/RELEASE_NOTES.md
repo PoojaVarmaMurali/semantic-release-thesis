@@ -1,5 +1,22 @@
 # Release Notes
 
+## 📦 Version 1.2.0-develop.8
+
+### 🐛 Fixes
+
+## Fixes Commits Summary
+
+- ### Change
+    - Testing restructured release notes on the Java folder.
+
+- ### Reason
+    - To ensure the release notes are properly organized and formatted for the Java project.
+
+- ### Impact
+    - Improves the readability and maintainability of the release notes for the Java project.
+
+# Release Notes
+
 ## 📦 Version 1.2.0-develop.7
 
 ### 🐛 Fixes
