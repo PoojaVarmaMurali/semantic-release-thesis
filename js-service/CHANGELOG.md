@@ -1,3 +1,19 @@
+# [1.4.0-develop.3](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/js-v1.4.0-develop.2...js-v1.4.0-develop.3) (2025-07-09)
+
+
+### Bug Fixes
+
+* testing automated release notes in develop ([aa66225](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/aa662255d1c8081f31727773f2deb726dff6f819))
+* testing python folder and release notes.md ([9b2a83e](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/9b2a83e9d01688655ad2611d3226f49c91fbe63e))
+
+
+### Features
+
+* added logic to skip wrkitting release notes if the changes are identified in branched other than main branch ([dfcd456](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/dfcd456808928b3e1715869020ad7a2be5fb4806))
+* updating automated release notes generation ([b3c0828](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/b3c0828c79cf1e6209c2ae99b7cee2be7fe88a47))
+* updating automated release notes generation ([436f737](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/436f7373fcf1ed7a5b47adf19b031db6d5232fce))
+* updating automated release notes generation ([4ab7110](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/4ab7110c9f8bff8cf718614b50974d78301cc6cc))
+
 # [1.4.0-develop.2](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/js-v1.4.0-develop.1...js-v1.4.0-develop.2) (2025-07-09)
 
 
