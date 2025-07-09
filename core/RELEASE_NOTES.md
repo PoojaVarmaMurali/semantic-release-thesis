@@ -1,5 +1,18 @@
 # Release Notes
 
+## 📦 Version 1.2.0-develop.7
+
+### 🐛 Fixes
+
+- ### Change
+    - Modified the structure of release notes.md file.
+- ### Reason
+    - To improve the readability and organization of the release notes document.
+- ### Impact
+    - This change will make it easier for stakeholders to quickly understand the key information and improvements in each release, enhancing the overall communication and transparency of the project.
+
+# Release Notes
+
 ## Fixes
 
 - **Fix**: Testing AI in Java folder.
