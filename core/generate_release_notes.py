@@ -25,8 +25,7 @@ def query_batch(commits, section):
     """
     prompt = (
         f"Summarize the following {section.lower()} commits clearly. "
-        "List each summary as a bullet point, specifying what was changed, why it was changed, "
-        "and any impact on the project.\n\n"
+        "List each summary as a bullet point with clear headings for Change, Reason, and Impact.\n\n"
     )
     for i, commit in enumerate(commits, 1):
         prompt += f"{i}. {commit}\n"
@@ -64,30 +63,41 @@ def main():
         text = f"{commit['subject']} {commit['body']}"
         sections[category].append(text)
 
-    # Compose new release notes
-    markdown = "# Release Notes\n\n"
+    # Get version or default to Unreleased
+    version = os.getenv("RELEASE_VERSION", "Unreleased")
+
+    markdown = f"## 📦 Version {version}\n\n"
 
     for section, messages in sections.items():
         if not messages:
             continue
 
+        emoji = {
+            "Features": "✨",
+            "Fixes": "🐛",
+            "Chores": "🧹",
+            "Other": "🔖"
+        }.get(section, "🔖")
+
         print(f"\nSummarizing {len(messages)} commits in section '{section}'...")
         summary = query_batch(messages, section)
 
-        markdown += f"## {section}\n\n"
+        markdown += f"### {emoji} {section}\n\n"
         markdown += summary + "\n\n"
 
     # Load existing release notes if any
     if os.path.exists(release_notes_path):
         with open(release_notes_path, "r") as f:
-            existing_content = f.read()
+            existing_content = f.read().strip()
     else:
         existing_content = ""
 
-    # Write new release notes with latest at the top
+    # Combine with a single top-level heading
+    combined_content = "# Release Notes\n\n" + markdown.strip() + "\n\n" + existing_content
+
+    # Save file
     with open(release_notes_path, "w") as f:
-        f.write(markdown.strip() + "\n\n")
-        f.write(existing_content.strip())
+        f.write(combined_content.strip() + "\n")
 
     print("✅ Release notes updated (prepended) in: RELEASE_NOTES.md")
 
