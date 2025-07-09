@@ -1,5 +1,20 @@
 # Release Notes
 
+## 📦 Version 1.2.0-develop.9
+
+### 🐛 Fixes
+
+- ### Change
+    - Refactored the `generate_release_notes.py` script.
+
+- ### Reason
+    - The change was made to improve the code structure, readability, and maintainability of the script.
+
+- ### Impact
+    - This refactoring improves the overall quality of the script and makes it easier for developers to understand, modify, and extend its functionality. It also helps to reduce technical debt and potential bugs that may arise from complex or poorly structured code.
+
+# Release Notes
+
 ## 📦 Version 1.2.0-develop.8
 
 ### 🐛 Fixes

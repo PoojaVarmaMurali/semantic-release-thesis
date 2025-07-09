@@ -1,3 +1,11 @@
+# [1.2.0-develop.9](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.2.0-develop.8...core-v1.2.0-develop.9) (2025-07-09)
+
+
+### Bug Fixes
+
+* refactoring generate_release_notes.py ([891ba3d](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/891ba3db65d8767301a9ad6f5eb26d169181fdb3))
+* testing release notes on java folder ([c345b38](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/c345b384f46904cf6d93e4366e36c98d9f9502e4))
+
 # [1.2.0-develop.8](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.2.0-develop.7...core-v1.2.0-develop.8) (2025-07-09)
 
 
