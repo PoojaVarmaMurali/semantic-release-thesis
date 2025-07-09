@@ -36,9 +36,9 @@ def get_commits(since_tag=None):
 
 
 if __name__ == "__main__":
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    repo_root = os.path.abspath(os.path.join(script_dir, ".."))
-    commits_path = os.path.join(repo_root, "core", "commits.json")
+    # Write commits.json in the current working directory
+    cwd = os.getcwd()
+    commits_path = os.path.join(cwd, "commits.json")
 
     tag = get_latest_tag()
     commits = get_commits(tag)
