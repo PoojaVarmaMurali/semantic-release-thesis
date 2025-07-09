@@ -25,7 +25,7 @@
     [
       "@semantic-release/exec",
       {
-  "prepareCmd": "sed -i 's/__version__ = \\\".*\\\"/__version__ = \\\"${nextRelease.version}\\\"/' python_servicepkg/__init__.py && python3 ../core/parse_commit.py && python3 ../core/generate_release_notes.py"
+          "prepareCmd": "sed -i 's/__version__ = \".*\"/__version__ = \"${nextRelease.version}\"/' python_servicepkg/__init__.py && python3 ../core/parse_commit.py && python3 ../core/generate_release_notes.py"
       }
     ],
 

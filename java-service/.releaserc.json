@@ -25,7 +25,8 @@
     [
       "@semantic-release/exec",
       {
-  "prepareCmd": "mvn versions:set -DnewVersion=${nextRelease.version} -DgenerateBackupPoms=false && python3 ../core/parse_commit.py && python3 ../core/generate_release_notes.py"
+       "prepareCmd": "mvn versions:set -DnewVersion=${nextRelease.version} -DgenerateBackupPoms=false && python3 ../core/parse_commit.py && python3 ../core/generate_release_notes.py"
+
       }
 
     ],
