@@ -1,3 +1,40 @@
+# [1.4.0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/java-v1.3.0...java-v1.4.0) (2025-07-09)
+
+
+### Bug Fixes
+
+* Added a java file ([5f38228](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/5f38228a4d7ba3e202105e261121bd368024ae5d))
+* fixed the path ([8f24af0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/8f24af0a45baa3319920ff081dbf86cd090a72e9))
+* Merge branch 'develop' of github.com:PoojaVarmaMurali/semantic-release-thesis into develop ([a2da1d2](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/a2da1d2e31f0610b211774f0420c6d02a4bd9d10))
+* Merge branch 'develop' of github.com:PoojaVarmaMurali/semantic-release-thesis into develop ([60ac79d](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/60ac79d0ac516b925fe991b13d710896a7d6ad17))
+* Merge branch 'develop' of github.com:PoojaVarmaMurali/semantic-release-thesis into develop ([ff0e324](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/ff0e3242a6ac2620c3ce1e5c026e08c22f92a4c3))
+* modifed version.py ([58badfb](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/58badfb5fd592f1f67a0b75204a13a225559d8d3))
+* modified the structure of release notes.md ([f49e46c](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/f49e46cca55ab93a6ebfe67db03b09d9be2022b4))
+* refactoring generate_release_notes.py ([891ba3d](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/891ba3db65d8767301a9ad6f5eb26d169181fdb3))
+* testing AI in java folder ([79de340](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/79de3400a9f58222b91118858b15bf259ffc1dfe))
+* testing java folder ([b0bae92](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/b0bae92c4837361917e51e7bc9cb29b313972ea5))
+* testing js folder and release notes.md ([45a9f36](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/45a9f363a5bc7098d42d96b1a8c0373ccd3d7b9a))
+* testing on java folder ([cf4953e](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/cf4953ea574bc3aa30db41cd918c15b9702b740b))
+* testing python folder and release notes.md ([9b2a83e](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/9b2a83e9d01688655ad2611d3226f49c91fbe63e))
+* testing release notes on java folder ([c345b38](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/c345b384f46904cf6d93e4366e36c98d9f9502e4))
+* testing restructured release notes on java folder ([8b15eeb](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/8b15eeb51e80052ad68e930d6a9dd5391186ab15))
+* updated commits.json path ([eb309f5](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/eb309f5a37785b8455230fd061643c5cbbb81edb))
+* updated path ([613d2d6](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/613d2d6335f7a0f6d2904beb4fd7a4eb0236f881))
+* updated path in all releaserc files ([30da102](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/30da1028d113e2d3064d4c94a3db7a66ca556309))
+
+
+### Features
+
+* added logic to skip wrkitting release notes if the changes are identified in branched other than main branch ([dfcd456](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/dfcd456808928b3e1715869020ad7a2be5fb4806))
+* added release notes artifact ([0625d73](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/0625d73421980c66a3ab0800a3a00fc143ea600c))
+* modified commits.json location ([bb5cae7](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/bb5cae7cde3ec92f485bf1b8c4b71009a151217d))
+* modified the logic in parse commit ([01ba75c](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/01ba75c7aaad7800d23a918603f46ba9ccf2f601))
+* modified the way release notes gets written ([a015014](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/a015014b56b0177d84888e347bff34dd156dde13))
+* testing the feature ([0372899](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/0372899513bccaa485d76f5f2e5b19439cacdc0f))
+* updating automated release notes generation ([b3c0828](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/b3c0828c79cf1e6209c2ae99b7cee2be7fe88a47))
+* updating automated release notes generation ([436f737](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/436f7373fcf1ed7a5b47adf19b031db6d5232fce))
+* updating automated release notes generation ([4ab7110](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/4ab7110c9f8bff8cf718614b50974d78301cc6cc))
+
 # [1.3.0-develop.7](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/java-v1.3.0-develop.6...java-v1.3.0-develop.7) (2025-07-09)
 
 
