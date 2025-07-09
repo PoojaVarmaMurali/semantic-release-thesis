@@ -1,6 +1,7 @@
 import os
 import json
 import cohere
+import subprocess
 
 # Load Cohere API key securely from environment variable
 api_key = os.getenv("COHERE_API_KEY")
@@ -37,12 +38,25 @@ def query_batch(commits, section):
         temperature=0.2,
     )
     return response.generations[0].text.strip()
-
 def main():
+    # Detect current branch
+    branch = subprocess.check_output(
+        ["git", "rev-parse", "--abbrev-ref", "HEAD"]
+    ).decode().strip()
+
+    if branch != "main":
+        print(f"⚠️ Skipping release notes generation on '{branch}' branch.")
+        return
+
     # Use CWD as the release folder
     cwd = os.getcwd()
     commits_path = os.path.join(cwd, "commits.json")
     release_notes_path = os.path.join(cwd, "RELEASE_NOTES.md")
+    if not os.path.exists(release_notes_path):
+        print("Creating new RELEASE_NOTES.md file...")
+        with open(release_notes_path, "w") as f:
+            f.write("# Release Notes\n\n")
+    
 
 
     if not os.path.exists(commits_path):
