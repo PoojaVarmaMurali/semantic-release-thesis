@@ -1,5 +1,14 @@
 # Release Notes
 
+## Fixes
+
+- **Fix**: Testing AI in Java folder.
+  - **Change**: Added testing capabilities for AI functionality within the Java folder of the project.
+  - **Reason**: To ensure the reliability and performance of the AI component, dedicated testing within its specific folder is necessary.
+  - **Impact**: Enhances the overall stability and quality of the project by specifically targeting and validating the AI functionality.
+
+# Release Notes
+
 ## Features
 
 - **Modified the logic in parse commit**:

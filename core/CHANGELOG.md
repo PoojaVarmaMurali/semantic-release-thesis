@@ -1,3 +1,10 @@
+# [1.2.0-develop.6](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.2.0-develop.5...core-v1.2.0-develop.6) (2025-07-09)
+
+
+### Bug Fixes
+
+* testing AI in java folder ([79de340](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/79de3400a9f58222b91118858b15bf259ffc1dfe))
+
 # [1.2.0-develop.5](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.2.0-develop.4...core-v1.2.0-develop.5) (2025-07-07)
 
 
