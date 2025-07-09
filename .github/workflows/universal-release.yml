@@ -209,5 +209,5 @@ jobs:
       - name: Upload Release Notes Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: RELEASE_NOTES.md
+          name: RELEASE_NOTES-${{ needs.detect-changed-folder.outputs.language }}.md
           path: "**/RELEASE_NOTES.md"

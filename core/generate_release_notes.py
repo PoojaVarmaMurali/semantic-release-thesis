@@ -39,10 +39,10 @@ def query_batch(commits, section):
     return response.generations[0].text.strip()
 
 def main():
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    repo_root = os.path.abspath(os.path.join(script_dir, ".."))
-    commits_path = os.path.join(repo_root, "core", "commits.json")
-    release_notes_path = os.path.join(repo_root, "core", "RELEASE_NOTES.md")
+    # Use CWD as the release folder
+    cwd = os.getcwd()
+    commits_path = os.path.join(cwd, "commits.json")
+    release_notes_path = os.path.join(cwd, "RELEASE_NOTES.md")
 
 
     if not os.path.exists(commits_path):
