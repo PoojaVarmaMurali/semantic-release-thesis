@@ -33,7 +33,7 @@
     [
       "@semantic-release/git",
       {
-        "assets": ["pom.xml", "CHANGELOG.md", "../core/RELEASE_NOTES.md"],
+        "assets": ["pom.xml", "CHANGELOG.md", "RELEASE_NOTES.md"],
         "message": "chore(release): java-v${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
     ],
