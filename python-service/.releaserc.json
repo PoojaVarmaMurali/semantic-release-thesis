@@ -32,7 +32,7 @@
     [
       "@semantic-release/git",
       {
-        "assets": ["CHANGELOG.md", "python_servicepkg/__init__.py", "../core/RELEASE_NOTES.md"],
+        "assets": ["CHANGELOG.md", "python_servicepkg/__init__.py", "RELEASE_NOTES.md"],
         "message": "chore(release): py-v${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
     ],
