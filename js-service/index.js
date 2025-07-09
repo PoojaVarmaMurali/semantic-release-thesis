@@ -10,3 +10,4 @@
 // force version bump
 // test language detection model
 // come on lets test it 
+// testing release notes generation

@@ -23,7 +23,7 @@
     ],
     ["@semantic-release/npm", {"npmPublish": false }],
     ["@semantic-release/git", {
-      "assets": ["CHANGELOG.md", "package.json", "../core/RELEASE_NOTES.md"],
+      "assets": ["CHANGELOG.md", "package.json", "RELEASE_NOTES.md"],
       "message": "chore(release): js-v${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
     }],
     "@semantic-release/github"
