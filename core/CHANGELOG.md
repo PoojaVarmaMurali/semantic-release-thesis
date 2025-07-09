@@ -1,3 +1,19 @@
+# [1.2.0-develop.11](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.2.0-develop.10...core-v1.2.0-develop.11) (2025-07-09)
+
+
+### Bug Fixes
+
+* fixed the path ([8f24af0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/8f24af0a45baa3319920ff081dbf86cd090a72e9))
+* Merge branch 'develop' of github.com:PoojaVarmaMurali/semantic-release-thesis into develop ([a2da1d2](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/a2da1d2e31f0610b211774f0420c6d02a4bd9d10))
+* testing java folder ([b0bae92](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/b0bae92c4837361917e51e7bc9cb29b313972ea5))
+* testing js folder and release notes.md ([45a9f36](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/45a9f363a5bc7098d42d96b1a8c0373ccd3d7b9a))
+* testing python folder and release notes.md ([9b2a83e](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/9b2a83e9d01688655ad2611d3226f49c91fbe63e))
+
+
+### Features
+
+* added logic to skip wrkitting release notes if the changes are identified in branched other than main branch ([dfcd456](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/dfcd456808928b3e1715869020ad7a2be5fb4806))
+
 # [1.2.0-develop.10](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.2.0-develop.9...core-v1.2.0-develop.10) (2025-07-09)
 
 
