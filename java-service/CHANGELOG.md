@@ -1,3 +1,18 @@
+# [1.3.0-develop.4](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/java-v1.3.0-develop.3...java-v1.3.0-develop.4) (2025-07-09)
+
+
+### Bug Fixes
+
+* Added a java file ([5f38228](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/5f38228a4d7ba3e202105e261121bd368024ae5d))
+* Merge branch 'develop' of github.com:PoojaVarmaMurali/semantic-release-thesis into develop ([ff0e324](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/ff0e3242a6ac2620c3ce1e5c026e08c22f92a4c3))
+* testing AI in java folder ([79de340](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/79de3400a9f58222b91118858b15bf259ffc1dfe))
+
+
+### Features
+
+* modified the logic in parse commit ([01ba75c](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/01ba75c7aaad7800d23a918603f46ba9ccf2f601))
+* modified the way release notes gets written ([a015014](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/a015014b56b0177d84888e347bff34dd156dde13))
+
 # [1.3.0-develop.3](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/java-v1.3.0-develop.2...java-v1.3.0-develop.3) (2025-07-07)
 
 
