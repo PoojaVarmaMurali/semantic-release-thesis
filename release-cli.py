@@ -70,8 +70,10 @@ def detect_scope(repo_path: str) -> str:
     if "core" in top_dirs:
         langs.add("core")
     if not langs:
-        detected = detect_language(repo_path).strip().lower()
-        return [detected]
+        detected = detect_language(repo_path)
+        if not detected or detected == ["Unknown"]:
+          return []
+        return detected if isinstance(detected, list) else [detected]
     return list(langs)
 
 def run_release(lang: str):
