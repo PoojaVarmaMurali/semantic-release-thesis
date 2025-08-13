@@ -2,6 +2,7 @@ import os
 import json
 import cohere
 import subprocess
+import re
 
 # Load Cohere API key securely from environment variable
 api_key = os.getenv("COHERE_API_KEY")
@@ -44,8 +45,8 @@ def main():
         ["git", "rev-parse", "--abbrev-ref", "HEAD"]
     ).decode().strip()
 
-    if branch != "main":
-        print(f"⚠️ Skipping release notes generation on '{branch}' branch.")
+    if branch not in ("develop", "main"):
+        print(f"ℹ️ Skipping release notes generation on '{branch}' branch (only 'develop' and 'main').")
         return
 
     # Use CWD as the release folder
@@ -74,13 +75,12 @@ def main():
 
     for commit in commits:
         category = classify_commit(commit["subject"])
-        text = f"{commit['subject']} {commit['body']}"
+        text = f"{commit['subject']} {commit.get('body','')}"
         sections[category].append(text)
 
-    # Get version or default to Unreleased
-    version = os.getenv("RELEASE_VERSION", "Unreleased")
+ 
 
-    markdown = f"## 📦 Version {version}\n\n"
+    body_md = ""
 
     for section, messages in sections.items():
         if not messages:
@@ -96,18 +96,61 @@ def main():
         print(f"\nSummarizing {len(messages)} commits in section '{section}'...")
         summary = query_batch(messages, section)
 
-        markdown += f"### {emoji} {section}\n\n"
-        markdown += summary + "\n\n"
+        body_md += f"### {emoji} {section}\n\n{summary}\n\n"
 
     # Load existing release notes if any
-    if os.path.exists(release_notes_path):
-        with open(release_notes_path, "r") as f:
-            existing_content = f.read().strip()
-    else:
-        existing_content = ""
+    with open(release_notes_path, "r") as f:
+        existing_content = f.read()
 
-    # Combine with a single top-level heading
-    combined_content = "# Release Notes\n\n" + markdown.strip() + "\n\n" + existing_content
+
+    # ✅ pattern to find the current Unreleased block (if present)
+    unreleased_pattern = r"## \[Unreleased\](?:.|\n)*?(?=\n## |\Z)"
+
+    # Version (only used on main)
+    version = os.getenv("RELEASE_VERSION", "Unreleased")
+
+    if branch == "develop":
+        # ✅ On develop: keep exactly one [Unreleased] block at the top (idempotent)
+        new_unreleased = "## [Unreleased]\n\n" + body_md.strip() + "\n"
+        # remove existing Unreleased block if present
+        content_wo_unreleased = re.sub(unreleased_pattern, "", existing_content, flags=re.DOTALL)
+        # ensure single top header; avoid duplicating "# Release Notes"
+        if content_wo_unreleased.lstrip().startswith("# Release Notes"):
+            # insert new block right after the header
+            combined_content = re.sub(
+                r"^# Release Notes\s*\n+",
+                "# Release Notes\n\n" + new_unreleased + "\n",
+                content_wo_unreleased,
+                count=1,
+                flags=re.M
+            )
+        else:
+            combined_content = "# Release Notes\n\n" + new_unreleased + "\n" + content_wo_unreleased
+
+    else:
+        # ✅ On main: promote Unreleased → Version {version}, or prepend version section if none exists
+        version_header = f"## 📦 Version {version}\n\n"
+        if re.search(unreleased_pattern, existing_content, flags=re.DOTALL):
+            # replace the Unreleased block with the versioned section
+            combined_content = re.sub(
+                unreleased_pattern,
+                (version_header + body_md.strip() + "\n"),
+                existing_content,
+                count=1,
+                flags=re.DOTALL
+            )
+        else:
+            # no Unreleased block — just prepend versioned notes once
+            if existing_content.lstrip().startswith("# Release Notes"):
+                combined_content = re.sub(
+                    r"^# Release Notes\s*\n+",
+                    "# Release Notes\n\n" + version_header + body_md.strip() + "\n\n",
+                    existing_content,
+                    count=1,
+                    flags=re.M
+                )
+            else:
+                combined_content = "# Release Notes\n\n" + version_header + body_md.strip() + "\n\n" + existing_content
 
     # Save file
     with open(release_notes_path, "w") as f:
