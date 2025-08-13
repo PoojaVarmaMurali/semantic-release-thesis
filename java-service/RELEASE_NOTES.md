@@ -1,5 +1,18 @@
 # Release Notes
 
+## [Unreleased]
+
+### 🐛 Fixes
+
+## Fixes Commits Summary
+
+- ### Change: 
+    - Testing multi-language commit 
+- ### Reason: 
+    - To test the functionality of multi-language support in the project. 
+- ### Impact: 
+    - This commit will enable the project to handle multiple languages, improving accessibility and user experience for a global audience.
+
 ## 📦 Version 1.4.0
 
 ### ✨ Features
