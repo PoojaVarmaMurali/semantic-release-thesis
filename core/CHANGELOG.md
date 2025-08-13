@@ -1,3 +1,10 @@
+# [1.2.0-develop.13](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.2.0-develop.12...core-v1.2.0-develop.13) (2025-08-13)
+
+
+### Bug Fixes
+
+* testing multi lang commit ([b8f1e7c](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/b8f1e7c016cf17fc57b0200d847b68964d3a1426))
+
 # [1.2.0-develop.12](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.2.0-develop.11...core-v1.2.0-develop.12) (2025-08-13)
 
 

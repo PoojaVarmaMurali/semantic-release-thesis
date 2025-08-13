@@ -2,7 +2,18 @@
 
 ## [Unreleased]
 
-### ✨ Features
+### 🐛 Fixes
+
+## Fixes Commits Summary:
+
+- ### Change: 
+    - Fix: Testing multi-lang commit.
+
+- ### Reason: 
+    - To test the functionality of multi-language support in the project.
+
+- ### Impact: 
+    - This commit will ensure that the project can handle multiple languages effectively and provide a seamless experience for users across different languages.
 
 ## Summary of Feature Commit
 
