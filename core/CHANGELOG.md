@@ -1,3 +1,18 @@
+# [1.2.0-develop.12](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.2.0-develop.11...core-v1.2.0-develop.12) (2025-08-13)
+
+
+### Bug Fixes
+
+* testing automated release notes in develop ([aa66225](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/aa662255d1c8081f31727773f2deb726dff6f819))
+
+
+### Features
+
+* Modified generate_release_notes.py to enable prerelease notes generation on develop branch ([bd6768d](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/bd6768d5588a7d890b0ae7c96c7fe01638da45af))
+* updating automated release notes generation ([b3c0828](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/b3c0828c79cf1e6209c2ae99b7cee2be7fe88a47))
+* updating automated release notes generation ([436f737](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/436f7373fcf1ed7a5b47adf19b031db6d5232fce))
+* updating automated release notes generation ([4ab7110](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/4ab7110c9f8bff8cf718614b50974d78301cc6cc))
+
 # [1.2.0-develop.11](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.2.0-develop.10...core-v1.2.0-develop.11) (2025-07-09)
 
 
