@@ -103,11 +103,10 @@ def main():
     
     args = parser.parse_args()
     langs = detect_scope(args.repo_path)
-    if isinstance(langs, list):
-        print(f"languages={json.dumps(langs)}")
-    else:
-        print(f"language={langs}")
-        langs = [langs]
+    if not isinstance(langs, list):
+      langs = [langs]
+    print(f"languages={json.dumps(langs)}")
+
 
     if args.run:
         for lang in langs:
