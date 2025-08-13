@@ -41,11 +41,9 @@ jobs:
       - name: Detect changed language(s)
         id: detect
         run: |
-          langs=$(python3 release-cli.py ${{ github.workspace }} | grep -i "languages=" | cut -d= -f2 | xargs)
-          echo "languages=$langs"
-          echo "languages<<EOF" >> $GITHUB_OUTPUT
-          echo "$langs" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
+          output=$(python3 release-cli.py ${{ github.workspace }})
+          echo "$output"
+          echo "$output" | grep -i "languages=" >> $GITHUB_OUTPUT
 
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
