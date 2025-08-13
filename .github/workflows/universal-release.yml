@@ -41,7 +41,7 @@ jobs:
       - name: Detect changed language(s)
         id: detect
         run: |
-          langs=$(python3 release-cli.py ${{ github.workspace }} | grep -i "language=" | cut -d= -f2 | xargs)
+          langs=$(python3 release-cli.py ${{ github.workspace }} | grep -i "languages=" | cut -d= -f2 | xargs)
           echo "languages=$langs"
           echo "languages<<EOF" >> $GITHUB_OUTPUT
           echo "$langs" >> $GITHUB_OUTPUT
