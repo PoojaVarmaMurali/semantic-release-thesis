@@ -1,5 +1,20 @@
 # Release Notes
 
+## [Unreleased]
+
+### ✨ Features
+
+## Summary of Feature Commit
+
+- ### Change
+    - Modified the `generate_release_notes.py` script to enable the generation of pre-release notes from the `develop` branch.
+
+- ### Reason
+    - To facilitate the creation of pre-release notes directly from the `develop` branch, providing an efficient way to track and document changes for pre-releases.
+
+- ### Impact
+    - This modification enhances the release note generation process by offering flexibility. It allows for easy access to up-to-date information about changes in the `develop` branch, aiding in transparency and communication regarding pre-release updates.
+
 ## 📦 Version 1.2.0-develop.10
 
 ### 🐛 Fixes
