@@ -20,7 +20,7 @@ SIGNATURES = {
     }
 }
 
-def detect_language(repo_path: str) -> str:
+def detect_language(repo_path: str) -> list:
     scores = defaultdict(int)
     EXCLUDE_DIRS = {"node_modules", "venv", "__pycache__", ".git", ".idea", ".mvn"}
     
@@ -29,7 +29,6 @@ def detect_language(repo_path: str) -> str:
     for root, dirs, files in os.walk(repo_path):
         dirs[:] = [d for d in dirs if d not in EXCLUDE_DIRS]
         for file in files:
-            file_path = os.path.join(root, file)
             _, ext = os.path.splitext(file)
 
             for lang, rules in SIGNATURES.items():
@@ -42,19 +41,25 @@ def detect_language(repo_path: str) -> str:
 
     if not scores:
         print("Scoring breakdown: none")
-        return "Unknown"
+        return []
     
     print("\n Scoring breakdown:")
     for lang, score in scores.items():
         print(f"  {lang}: {score}")
 
-    return max(scores, key=scores.get)
-
+    # Threshold for near-max scoring languages
+    max_score = max(scores.values())
+    threshold = 0.7
+    return sorted(
+        [lang for lang, score in scores.items() if score >= threshold * max_score]
+    )
 if __name__ == "__main__":
     import sys
     if len(sys.argv) != 2:
         print("Usage: python detect_language.py <repo_path>")
     else:
-        detected = detect_language(sys.argv[1])
-        print(f"\n Detected language: {detected}")
-  
+        langs = detect_language(sys.argv[1])
+        if langs:
+            print(f"languages={','.join(langs)}")
+        else:
+            print("languages=Unknown")

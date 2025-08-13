@@ -1,6 +1,7 @@
 import argparse  #prase cammand-line arguments
 import subprocess #runs external shell command
 import sys      #exits the script with custom exit code/messages
+import json
 from core.language_detector.detect_language import detect_language      #custom function to detect the project language
 
 LANGUAGE_COMMANDS = {
@@ -54,21 +55,24 @@ def detect_scope(repo_path: str) -> str:
         normalized = file.strip().lstrip("./")
 
         if normalized == "release-cli.py" or normalized.startswith(".github/") or normalized.startswith("core/"):
-            return "core"
+            top_dirs.add("core")
+        else:
+            top_dir = normalized.split('/')[0]
+            top_dirs.add(top_dir)
 
-        top_dir = normalized.split('/')[0]
-        top_dirs.add(top_dir)
-
-        
-        if "js-service" in top_dirs:
-            return "javascript"
-        elif "python-service" in top_dirs:
-            return "python"
-        elif "java-service" in top_dirs:
-            return "java"
-
-
-    return detect_language(repo_path).strip().lower()
+    langs = set()
+    if "js-service" in top_dirs:
+        langs.add("javascript")
+    if "python-service" in top_dirs:
+        langs.add("python")
+    if "java-service" in top_dirs:
+        langs.add("java")
+    if "core" in top_dirs:
+        langs.add("core")
+    if not langs:
+        detected = detect_language(repo_path).strip().lower()
+        return [detected]
+    return list(langs)
 
 def run_release(lang: str):
     
@@ -96,12 +100,17 @@ def main():
     parser.add_argument("--run", action="store_true", help="Run release for detected language")
     
     args = parser.parse_args()
-    lang = detect_scope(args.repo_path).strip().lower()
-    print(f"language={lang}") 
+    langs = detect_scope(args.repo_path)
+    if isinstance(langs, list):
+        print(f"languages={json.dumps(langs)}")
+    else:
+        print(f"language={langs}")
+        langs = [langs]
 
     if args.run:
-        print(f"DEBUG: lang={lang}, available keys={list(LANGUAGE_COMMANDS.keys())}")
-        run_release(lang)
+        for lang in langs:
+            print(f"DEBUG: lang={lang}, available keys={list(LANGUAGE_COMMANDS.keys())}")
+            run_release(lang)
 
 if __name__ == "__main__":
     main()

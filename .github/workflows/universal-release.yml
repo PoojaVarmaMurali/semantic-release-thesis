@@ -20,7 +20,7 @@ jobs:
   detect-changed-folder:
     runs-on: ubuntu-latest
     outputs:
-      language: ${{ steps.detect.outputs.language }}
+      languages: ${{ steps.detect.outputs.languages }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -38,22 +38,40 @@ jobs:
           echo "Changed files:"
           git diff --name-only HEAD^
 
-      - name: Detect changed language
+      - name: Detect changed language(s)
         id: detect
         run: |
-          lang=$(python3 release-cli.py ${{ github.workspace }} | grep -i "language=" | cut -d= -f2 | xargs)
-          echo "language=$lang"
-          echo "language=$lang" >> $GITHUB_OUTPUT
+          langs=$(python3 release-cli.py ${{ github.workspace }} | grep -i "language=" | cut -d= -f2 | xargs)
+          echo "languages=$langs"
+          echo "languages<<EOF" >> $GITHUB_OUTPUT
+          echo "$langs" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           COHERE_API_KEY: ${{ secrets.COHERE_API_KEY }}
 
       - name: Debug Output
-        run: echo "Language was ${{ steps.detect.outputs.language }}"
+        run: "echo \"Languages: ${{ steps.detect.outputs.languages }}\""
+
+  release-per-language:
+    needs: detect-changed-folder
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        language: ${{ fromJson(needs.detect-changed-folder.outputs.languages) }}
+
+    steps:
+      - name: Run Semantic Release
+        run: |
+          echo "Running release for language: ${{ matrix.language }}"
+          python3 release-cli.py . --run
+        env:
+          COHERE_API_KEY: ${{ secrets.COHERE_API_KEY }}
 
 
   release-js:
-    if: needs.detect-changed-folder.outputs.language == 'javascript' 
+    if: needs.detect-changed-folder.outputs.languages == 'javascript' 
     runs-on: ubuntu-latest 
     needs: detect-changed-folder
     steps:
@@ -90,7 +108,7 @@ jobs:
           path: "**/RELEASE_NOTES.md"
 
   release-python:
-    if: needs.detect-changed-folder.outputs.language == 'python'
+    if: needs.detect-changed-folder.outputs.languages == 'python'
     runs-on: ubuntu-latest 
     needs: detect-changed-folder
     steps:
@@ -141,7 +159,7 @@ jobs:
           path: "**/RELEASE_NOTES.md"
        
   release-java:
-    if: needs.detect-changed-folder.outputs.language == 'java'
+    if: needs.detect-changed-folder.outputs.languages == 'java'
     runs-on: ubuntu-latest 
     needs: detect-changed-folder
     steps:
@@ -177,7 +195,7 @@ jobs:
           path: "**/RELEASE_NOTES.md"
 
   release-core:
-    if: needs.detect-changed-folder.outputs.language == 'core'
+    if: needs.detect-changed-folder.outputs.languages == 'core'
     runs-on: ubuntu-latest 
     needs: detect-changed-folder
     steps:
@@ -209,5 +227,5 @@ jobs:
       - name: Upload Release Notes Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: RELEASE_NOTES-${{ needs.detect-changed-folder.outputs.language }}.md
+          name: RELEASE_NOTES-${{ needs.detect-changed-folder.outputs.languages }}.md
           path: "**/RELEASE_NOTES.md"
