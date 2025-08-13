@@ -1,5 +1,14 @@
 # Release Notes
 
+## 📦 Version 1.2.0
+
+### ✨ Features
+
+- ### Heading: 
+    - **Change:** feat: Modified generate_release_notes.py script
+    - **Reason:** To enable generation of pre-release notes from the develop branch
+    - **Impact:** Allows for easier tracking of changes and faster access to release note information for pre-releases.
+
 ## 📦 Version 1.2.0-develop.10
 
 ### 🐛 Fixes
