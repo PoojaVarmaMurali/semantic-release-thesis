@@ -55,12 +55,14 @@ def detect_scope(repo_path: str) -> str:
 
         if normalized == "release-cli.py" or normalized.startswith(".github/") or normalized.startswith("core/"):
             return "core"
-
-        top_dir = normalized.split('/')[0]
-        top_dirs.add(top_dir)
+        else:
+            top_dir = normalized.split('/')[0]
+            top_dirs.add(top_dir)
 
         
-        if "js-service" in top_dirs:
+        if "core" in top_dirs:
+            return "core"
+        elif "js-service" in top_dirs:
             return "javascript"
         elif "python-service" in top_dirs:
             return "python"
