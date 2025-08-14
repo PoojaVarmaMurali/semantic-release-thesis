@@ -51,7 +51,6 @@ jobs:
       - name: Debug Output
         run: echo "Language was ${{ steps.detect.outputs.language }}"
 
-
   release-js:
     if: needs.detect-changed-folder.outputs.language == 'javascript' 
     runs-on: ubuntu-latest 
