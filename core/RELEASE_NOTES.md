@@ -4,12 +4,16 @@
 
 ### 🐛 Fixes
 
+## Fixes
+
 - ### Change
-    - Implemented a fix to address an issue.
+    - Testing fix
+
 - ### Reason
-    - The fix was tested to ensure its effectiveness and functionality.
+    - N/A
+
 - ### Impact
-    - This commit ensures that the implemented fix works as intended, improving the overall stability and performance of the software.
+    - N/A
 
 ## Fixes Commits Summary:
 

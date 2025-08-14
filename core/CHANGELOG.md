@@ -1,3 +1,11 @@
+# [1.2.0-develop.15](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.2.0-develop.14...core-v1.2.0-develop.15) (2025-08-14)
+
+
+### Bug Fixes
+
+* test the fix! ([86b359e](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/86b359eb3f87771fe696af8a787a291def269014))
+* testing ([57962a0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/57962a0176eb86e2df769c6aaadd44ab22bc04c0))
+
 # [1.2.0-develop.14](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.2.0-develop.13...core-v1.2.0-develop.14) (2025-08-14)
 
 
