@@ -1,18 +1,19 @@
 # Release Notes
 
-## [Unreleased]
+## 📦 Version 1.3.0
 
 ### 🐛 Fixes
 
+## Fixes Commits Summary:
 
-- ### Change
-    - Testing fix
+- ### Change:
+    - Fix: testing automated release notes in main /js-service.
 
-- ### Reason
-    - N/A
+- ### Reason:
+    - The change was made to test the automated release notes generation for the js-service repository.
 
-- ### Impact
-    - N/A
+- ### Impact:
+    - This fix ensures that automated release notes are correctly generated and included in future releases of the js-service project. Accurate release notes improve communication and understanding of project updates for developers and stakeholders.
 
 ## Fixes Commits Summary:
 
