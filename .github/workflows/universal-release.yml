@@ -20,7 +20,7 @@ jobs:
   detect-changed-folder:
     runs-on: ubuntu-latest
     outputs:
-      languages: ${{ steps.detect.outputs.languages }}
+      language: ${{ steps.detect.outputs.language }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -38,38 +38,18 @@ jobs:
           echo "Changed files:"
           git diff --name-only HEAD^
 
-      - name: Detect changed language(s)
+      - name: Detect changed language
         id: detect
         run: |
-          langs=$(python3 release-cli.py ${{ github.workspace }} | grep -i "languages=" | cut -d= -f2-)
-          echo "languages<<EOF" >> $GITHUB_OUTPUT
-          echo "$langs" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
-
+          lang=$(python3 release-cli.py ${{ github.workspace }} | grep -i "language=" | cut -d= -f2 | xargs)
+          echo "language=$lang"
+          echo "language=$lang" >> $GITHUB_OUTPUT
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           COHERE_API_KEY: ${{ secrets.COHERE_API_KEY }}
 
       - name: Debug Output
-        run: "echo \"Languages: ${{ steps.detect.outputs.languages }}\""
-
-  release-per-language:
-    needs: detect-changed-folder
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        language: ${{ fromJson(needs.detect-changed-folder.outputs.languages) }}
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Run Semantic Release for ${{ matrix.language }}
-        run: |
-          echo "Running release for language: ${{ matrix.language }}"
-          python3 release-cli.py . --run --lang ${{ matrix.language }}
-        env:
-          COHERE_API_KEY: ${{ secrets.COHERE_API_KEY }}
+        run: echo "Language was ${{ steps.detect.outputs.language }}"
 
 
   release-js:

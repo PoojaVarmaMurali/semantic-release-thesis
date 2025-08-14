@@ -1,7 +1,6 @@
 import argparse  #prase cammand-line arguments
 import subprocess #runs external shell command
 import sys      #exits the script with custom exit code/messages
-import json
 from core.language_detector.detect_language import detect_language      #custom function to detect the project language
 
 LANGUAGE_COMMANDS = {
@@ -32,8 +31,7 @@ def detect_scope(repo_path: str) -> str:
 
         if len(commits) < 2:
             print("Not enough commits to compare.")
-            detected = detect_language(repo_path)
-            return detected if isinstance(detected, list) else [detected]
+            return detect_language(repo_path).strip().lower()
 
         latest_commit, previous_commit = commits
 
@@ -55,31 +53,22 @@ def detect_scope(repo_path: str) -> str:
     for file in changed_files:
         normalized = file.strip().lstrip("./")
 
-        if (
-          normalized == "release-cli.py"
-          or normalized.startswith(".github/")
-          or normalized.startswith("core/")):
-          top_dirs.add("core")
+        if normalized == "release-cli.py" or normalized.startswith(".github/") or normalized.startswith("core/"):
+            return "core"
 
-        # Always extract top-level folder just in case
         top_dir = normalized.split('/')[0]
         top_dirs.add(top_dir)
 
-    langs = set()
-    if "js-service" in top_dirs:
-        langs.add("javascript")
-    if "python-service" in top_dirs:
-        langs.add("python")
-    if "java-service" in top_dirs:
-        langs.add("java")
-    if "core" in top_dirs:
-        langs.add("core")
-    if not langs:
-        detected = detect_language(repo_path)
-        if not detected or detected == ["Unknown"]:
-          return []
-        return detected if isinstance(detected, list) else [detected]
-    return list(langs)
+        
+        if "js-service" in top_dirs:
+            return "javascript"
+        elif "python-service" in top_dirs:
+            return "python"
+        elif "java-service" in top_dirs:
+            return "java"
+
+
+    return detect_language(repo_path).strip().lower()
 
 def run_release(lang: str):
     
@@ -105,22 +94,14 @@ def main():
     parser = argparse.ArgumentParser(description="Semantic Release CLI Tool")
     parser.add_argument("repo_path", help="Path to the project directory")
     parser.add_argument("--run", action="store_true", help="Run release for detected language")
-    parser.add_argument("--lang", help="Override language to run release for")
-
+    
     args = parser.parse_args()
-    langs = detect_scope(args.repo_path)
-
-    if not isinstance(langs, list):
-      langs = [langs]
-    print(f"languages={json.dumps(langs)}")
-
+    lang = detect_scope(args.repo_path).strip().lower()
+    print(f"language={lang}") 
 
     if args.run:
-        if args.lang:
-            langs = [args.lang.strip().lower()]
-        for lang in langs:
-            print(f"DEBUG: lang={lang}, available keys={list(LANGUAGE_COMMANDS.keys())}")
-            run_release(lang)
+        print(f"DEBUG: lang={lang}, available keys={list(LANGUAGE_COMMANDS.keys())}")
+        run_release(lang)
 
 if __name__ == "__main__":
     main()
