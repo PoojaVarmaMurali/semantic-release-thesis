@@ -101,7 +101,7 @@ def main():
 
     if args.run:
         print(f"DEBUG: lang={lang}, available keys={list(LANGUAGE_COMMANDS.keys())}")
-        run_release(lang)
+        run_release(lang) 
 
 if __name__ == "__main__":
     main()
