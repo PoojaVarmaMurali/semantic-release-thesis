@@ -61,7 +61,10 @@ jobs:
         language: ${{ fromJson(needs.detect-changed-folder.outputs.languages) }}
 
     steps:
-      - name: Run Semantic Release
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run Semantic Release for ${{ matrix.language }}
         run: |
           echo "Running release for language: ${{ matrix.language }}"
           python3 release-cli.py . --run

@@ -54,11 +54,15 @@ def detect_scope(repo_path: str) -> str:
     for file in changed_files:
         normalized = file.strip().lstrip("./")
 
-        if normalized == "release-cli.py" or normalized.startswith(".github/") or normalized.startswith("core/"):
-            top_dirs.add("core")
-        else:
-            top_dir = normalized.split('/')[0]
-            top_dirs.add(top_dir)
+        if (
+          normalized == "release-cli.py"
+          or normalized.startswith(".github/")
+          or normalized.startswith("core/")):
+          top_dirs.add("core")
+
+        # Always extract top-level folder just in case
+        top_dir = normalized.split('/')[0]
+        top_dirs.add(top_dir)
 
     langs = set()
     if "js-service" in top_dirs:
@@ -103,7 +107,7 @@ def main():
     
     args = parser.parse_args()
     langs = detect_scope(args.repo_path)
-    
+
     if not isinstance(langs, list):
       langs = [langs]
     print(f"languages={json.dumps(langs)}")
