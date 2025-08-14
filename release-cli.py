@@ -32,7 +32,8 @@ def detect_scope(repo_path: str) -> str:
 
         if len(commits) < 2:
             print("Not enough commits to compare.")
-            return detect_language(repo_path).strip().lower()
+            detected = detect_language(repo_path)
+            return detected if isinstance(detected, list) else [detected]
 
         latest_commit, previous_commit = commits
 
