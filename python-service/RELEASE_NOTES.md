@@ -2,64 +2,16 @@
 
 ## [Unreleased]
 
-### ✨ Features
-
-Here is a summary of the given feature commits: 
-
-- **Change:** feat: going back to the old logic 
-    - **Reason:** No explicit reason mentioned.
-    - **Impact:** No explicit impact mentioned.
-
-- **Change:** Added logic to run workflow for multiple language changes 
-    - **Reason:** To accommodate and process multiple language changes in the workflow. 
-    - **Impact:** Enhances the flexibility and adaptability of the workflow to handle various language updates simultaneously. 
-
-- **Change:** (Same as above) 
-    - **Reason:** (Same as above) 
-    - **Impact:** (Same as above) 
-
-- **Change:** (Same as above) 
-    - **Reason:** (Same as above) 
-    - **Impact:** (Same as above) 
-
-- **Change:** (Same as above) 
-    - **Reason:** (Same as above) 
-    - **Impact:** (Same as above) 
-
-- **Change:** (Same as above) 
-    - **Reason:** (Same as above) 
-    - **Impact:** (Same as above) 
-
-- **Change:** (Same as above) 
-    - **Reason:** (Same as above) 
-    - **Impact:** (Same as above) 
-
-- **Change:** (Same as above) 
-    - **Reason:** (Same as above) 
-    - **Impact:** (Same as above) 
-
-- **Change:** (Same as above) 
-    - **Reason:** (Same as above) 
-    - **Impact:** (Same as above) 
-
-- **Change:** (Same as above) 
-    - **Reason:** (Same as above) 
-    - **Impact:** (Same as above) 
-
-- **Change:** (Same as above) 
-    - **Reason:** (Same as above) 
-    - **Impact:** (Same as above) 
-
-Overall, these commits focus on enhancing the system's ability to handle multiple language changes through added logic, improving its adaptability
-
 ### 🐛 Fixes
 
+## Fixes
+
 - ### Change
-    - Implemented a fix to address an issue.
+    - A fix was implemented and tested.
 - ### Reason
-    - The fix was tested to ensure its effectiveness and functionality.
+    - N/A
 - ### Impact
-    - This commit ensures that the implemented fix works as intended, improving the stability and reliability of the software.
+    - This commit fixes an unknown issue and ensures that the fix works as intended through testing.
 
 ## 📦 Version 1.5.0-develop.19
 
