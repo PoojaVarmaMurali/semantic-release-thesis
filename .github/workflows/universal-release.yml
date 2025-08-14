@@ -67,7 +67,7 @@ jobs:
       - name: Run Semantic Release for ${{ matrix.language }}
         run: |
           echo "Running release for language: ${{ matrix.language }}"
-          python3 release-cli.py . --run
+          python3 release-cli.py . --run --lang ${{ matrix.language }}
         env:
           COHERE_API_KEY: ${{ secrets.COHERE_API_KEY }}
 

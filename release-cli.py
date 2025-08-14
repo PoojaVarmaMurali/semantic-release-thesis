@@ -105,7 +105,8 @@ def main():
     parser = argparse.ArgumentParser(description="Semantic Release CLI Tool")
     parser.add_argument("repo_path", help="Path to the project directory")
     parser.add_argument("--run", action="store_true", help="Run release for detected language")
-    
+    parser.add_argument("--lang", help="Override language to run release for")
+
     args = parser.parse_args()
     langs = detect_scope(args.repo_path)
 
@@ -115,6 +116,8 @@ def main():
 
 
     if args.run:
+        if args.lang:
+            langs = [args.lang.strip().lower()]
         for lang in langs:
             print(f"DEBUG: lang={lang}, available keys={list(LANGUAGE_COMMANDS.keys())}")
             run_release(lang)
