@@ -1,5 +1,18 @@
 # Release Notes
 
+## [Unreleased]
+
+### 🐛 Fixes
+
+## Fixes
+
+- ### Change
+    - A fix was implemented and tested.
+- ### Reason
+    - N/A
+- ### Impact
+    - This commit fixes an unknown issue and ensures that the fix works as intended through testing.
+
 ## 📦 Version 1.5.0-develop.19
 
 ### 🐛 Fixes

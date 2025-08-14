@@ -51,7 +51,6 @@ jobs:
       - name: Debug Output
         run: echo "Language was ${{ steps.detect.outputs.language }}"
 
-
   release-js:
     if: needs.detect-changed-folder.outputs.language == 'javascript' 
     runs-on: ubuntu-latest 
@@ -118,7 +117,6 @@ jobs:
         run: |
           sed -i 's/-develop\./.dev/' python-service/python_servicepkg/__init__.py
   
-
       - name: Install Python Dev dependencies
         run: |
           pip install -e .[dev]

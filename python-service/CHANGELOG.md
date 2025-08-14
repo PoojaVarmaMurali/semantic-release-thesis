@@ -1,3 +1,40 @@
+# [1.5.0-develop.21](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.5.0-develop.20...py-v1.5.0-develop.21) (2025-08-14)
+
+
+### Bug Fixes
+
+* test the fix ([1f0c224](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/1f0c224bc790a318c8e223de817c4bd116161dbc))
+* test the fix! ([86b359e](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/86b359eb3f87771fe696af8a787a291def269014))
+
+# [1.5.0-develop.20](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.5.0-develop.19...py-v1.5.0-develop.20) (2025-08-14)
+
+
+### Bug Fixes
+
+* test the fix ([12ae445](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/12ae445f04fc8627960640f46d461a8171096a42))
+* testing automated release notes in develop ([aa66225](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/aa662255d1c8081f31727773f2deb726dff6f819))
+* testing multi lang commit ([6417a2f](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/6417a2f6587c75d42059da070caf2aec9cd72ad2))
+* testing multi lang commit ([b8f1e7c](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/b8f1e7c016cf17fc57b0200d847b68964d3a1426))
+
+
+### Features
+
+* added logic to run workflow for multiple language changes ([783f947](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/783f947f7bb4b2359b79e0ad9309a1e127c10478))
+* added logic to run workflow for multiple language changes ([1bc2bde](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/1bc2bde2262d5f7bd4866685a9308a555debce97))
+* added logic to run workflow for multiple language changes ([26cdcda](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/26cdcda07db1d0af5799fb3320c8b39319c3362e))
+* added logic to run workflow for multiple language changes ([545cc82](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/545cc82a004791787cf45134228ab91cec86605c))
+* added logic to run workflow for multiple language changes ([9958dd8](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/9958dd8c31afa7cbb1dba9a93b3d69c30c207ac0))
+* added logic to run workflow for multiple language changes ([bb06ec4](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/bb06ec4f815464c453dc699fcf0226f3d383221b))
+* added logic to run workflow for multiple language changes ([10b2b60](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/10b2b604f8a13f3a6f7b24ae69a7adfd17636971))
+* added logic to run workflow for multiple language changes ([eac04b0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/eac04b0ef57346b78ea3c203442450f265b7b205))
+* added logic to run workflow for multiple language changes ([b31a99c](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/b31a99cb715ba92557c59303ff67ff826bfe43f1))
+* added logic to skip wrkitting release notes if the changes are identified in branched other than main branch ([dfcd456](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/dfcd456808928b3e1715869020ad7a2be5fb4806))
+* going back to the old logic ([7de4d0a](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/7de4d0abfc168cd4206307857dc2b7392497701a))
+* Modified generate_release_notes.py to enable prerelease notes generation on develop branch ([bd6768d](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/bd6768d5588a7d890b0ae7c96c7fe01638da45af))
+* updating automated release notes generation ([b3c0828](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/b3c0828c79cf1e6209c2ae99b7cee2be7fe88a47))
+* updating automated release notes generation ([436f737](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/436f7373fcf1ed7a5b47adf19b031db6d5232fce))
+* updating automated release notes generation ([4ab7110](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/4ab7110c9f8bff8cf718614b50974d78301cc6cc))
+
 # [1.5.0-develop.19](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.5.0-develop.18...py-v1.5.0-develop.19) (2025-07-09)
 
 

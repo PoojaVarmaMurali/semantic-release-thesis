@@ -1,5 +1,41 @@
 # Release Notes
 
+## [Unreleased]
+
+### 🐛 Fixes
+
+
+- ### Change
+    - Testing fix
+
+- ### Reason
+    - N/A
+
+- ### Impact
+    - N/A
+
+## Fixes Commits Summary:
+
+- ### Change: 
+    - Fix: Testing multi-lang commit.
+
+- ### Reason: 
+    - To test the functionality of multi-language support in the project.
+
+- ### Impact: 
+    - This commit will ensure that the project can handle multiple languages effectively and provide a seamless experience for users across different languages.
+
+## Summary of Feature Commit
+
+- ### Change
+    - Modified the `generate_release_notes.py` script to enable the generation of pre-release notes from the `develop` branch.
+
+- ### Reason
+    - To facilitate the creation of pre-release notes directly from the `develop` branch, providing an efficient way to track and document changes for pre-releases.
+
+- ### Impact
+    - This modification enhances the release note generation process by offering flexibility. It allows for easy access to up-to-date information about changes in the `develop` branch, aiding in transparency and communication regarding pre-release updates.
+
 ## 📦 Version 1.2.0
 
 ### ✨ Features

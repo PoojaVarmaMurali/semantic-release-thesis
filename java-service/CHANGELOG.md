@@ -1,3 +1,17 @@
+# [1.5.0-develop.1](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/java-v1.4.0...java-v1.5.0-develop.1) (2025-08-13)
+
+
+### Bug Fixes
+
+* testing automated release notes in develop ([aa66225](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/aa662255d1c8081f31727773f2deb726dff6f819))
+* testing multi lang commit ([6417a2f](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/6417a2f6587c75d42059da070caf2aec9cd72ad2))
+* testing multi lang commit ([b8f1e7c](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/b8f1e7c016cf17fc57b0200d847b68964d3a1426))
+
+
+### Features
+
+* Modified generate_release_notes.py to enable prerelease notes generation on develop branch ([bd6768d](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/bd6768d5588a7d890b0ae7c96c7fe01638da45af))
+
 # [1.4.0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/java-v1.3.0...java-v1.4.0) (2025-07-09)
 
 
