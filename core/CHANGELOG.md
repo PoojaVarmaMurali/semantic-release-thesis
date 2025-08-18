@@ -1,3 +1,15 @@
+# [1.2.0-develop.16](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.2.0-develop.15...core-v1.2.0-develop.16) (2025-08-18)
+
+
+### Bug Fixes
+
+* updated the scope in release-cli.py ([7eceec3](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/7eceec349fcb9fda7d8f97d38d638a34033baeec))
+
+
+### Features
+
+* added a feature to calculator.py ([1fbea3f](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/1fbea3f1a747c00459daba3289088353ca8fcde0))
+
 # [1.2.0-develop.15](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.2.0-develop.14...core-v1.2.0-develop.15) (2025-08-14)
 
 
