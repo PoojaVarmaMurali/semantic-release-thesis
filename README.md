@@ -69,3 +69,29 @@ These files are **ignored in version control** (`.gitignore`) and are regenerate
 If you need to see the generated release notes:
 - Look at the GitHub Actions workflow artifacts.
 - Run the scripts locally if needed.
+ 
+### Thesis Objective
+
+This project aims to extend the functionality of Semantic Release to support:
+
+1. Multi-language monorepos: with scoped configuration for JavaScript, Python, Java
+
+2. AI-powered human-readable release notes: summarizing commit context in plain English
+
+3. Branch-specific behavior: Pre-releases on develop and stable releases on main
+
+It builds a production-ready automation system for consistent versioning and changelog generation across different languages.
+
+### Language Detection Logic
+
+The workflow includes automatic detection of which service (language) has changed, using:
+
+File extension patterns (e.g., .js, .py, .java)
+
+Project-specific files (e.g., setup.py, pom.xml, package.json)
+
+Git diff analysis to scope changed folders
+
+Fallback detection using directory scoring logic
+
+This enables only the changed language workflows to run per commit.
