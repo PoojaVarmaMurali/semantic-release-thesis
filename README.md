@@ -2,7 +2,7 @@
 
 - Multi-Language Adaptive Configuration & AI-Powered Release Notes in Semantic Release  
 - Semantic Release mainly works based on the conventional commit messages.  
-
+--------------------------------------------------------------------
 ### Conventional Commit Cheat Sheet:
 - **Format:**  
     `<type>(<scope>): <short summary>`  
@@ -32,7 +32,7 @@
 - Keep summaries under 70 characters  
 - Use scopes for clarity in multi-language repos  
 - Avoid vague messages like `fix: stuff` or `update`  
-
+-----------------------------------------------------------------
 ### Folder structure and brief
 
 Javascript:
@@ -54,7 +54,7 @@ This folder containes all the shared files/scripts and configurations.
 .github/workflows/universal-release.yml --> This is the universal workflow for all the languages and the shared repository.
 
 
-
+-----------------------------------------------------
 ### Release Notes Generation
 
 This project uses automated scripts to generate release notes and commit metadata:
@@ -69,7 +69,7 @@ These files are **ignored in version control** (`.gitignore`) and are regenerate
 If you need to see the generated release notes:
 - Look at the GitHub Actions workflow artifacts.
 - Run the scripts locally if needed.
- 
+----------------------------------------------------
 ### Thesis Objective
 
 This project aims to extend the functionality of Semantic Release to support:
@@ -81,7 +81,7 @@ This project aims to extend the functionality of Semantic Release to support:
 3. Branch-specific behavior: Pre-releases on develop and stable releases on main
 
 It builds a production-ready automation system for consistent versioning and changelog generation across different languages.
-
+-----------------------------------------------------
 ### Language Detection Logic
 
 The workflow includes automatic detection of which service (language) has changed, using:
@@ -95,3 +95,20 @@ Git diff analysis to scope changed folders
 Fallback detection using directory scoring logic
 
 This enables only the changed language workflows to run per commit.
+---------------------------------------------------------------
+### AI-Powered Release Notes
+
+The project integrates Cohere to generate intelligent, user-friendly release notes that explain:
+
+What changed
+
+Why it changed
+
+What the impact is
+
+The AI is triggered automatically in the CI/CD pipeline via:
+python3 core/generate_release_notes.py
+
+The generated RELEASE_NOTES.md file is also uploaded as a workflow artifact.
+
+-------------------------------------------------------------
