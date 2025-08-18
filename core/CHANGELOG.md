@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.3.0...core-v1.4.0) (2025-08-18)
+
+
+### Features
+
+* added a feature to calculator.py ([1fbea3f](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/1fbea3f1a747c00459daba3289088353ca8fcde0))
+
 # [1.3.0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/core-v1.2.0...core-v1.3.0) (2025-08-14)
 
 
