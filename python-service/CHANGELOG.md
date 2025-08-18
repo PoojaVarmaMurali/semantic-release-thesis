@@ -1,3 +1,11 @@
+# [1.5.0-develop.23](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.5.0-develop.22...py-v1.5.0-develop.23) (2025-08-18)
+
+
+### Bug Fixes
+
+* calculator.py ([1bd0688](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/1bd068852ab9a44ad9474ed97c9a23e0fedcbd9a))
+* updated the scope in release-cli.py ([7eceec3](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/7eceec349fcb9fda7d8f97d38d638a34033baeec))
+
 # [1.5.0-develop.22](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.5.0-develop.21...py-v1.5.0-develop.22) (2025-08-18)
 
 

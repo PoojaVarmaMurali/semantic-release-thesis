@@ -2,12 +2,18 @@
 
 ## [Unreleased]
 
-### ✨ Features
+### 🐛 Fixes
 
-- ### Heading: Calculator Feature Update
-    - Change: Added a new feature to the calculator.py module.
-    - Reason: To enhance the functionality of the calculator.
-    - Impact: Users will have access to additional calculations or improved calculation capabilities, making the calculator more versatile and useful.
+## Fixes Commits Summary
+
+- ### Change: 
+    - Fixed an issue in the calculator.py file.
+
+- ### Reason: 
+    - The change was made to address a bug or improve the functionality of the calculator.
+
+- ### Impact: 
+    - The fix ensures that the calculator functions accurately and reliably, improving the overall user experience.
 
 ## Fixes
 
