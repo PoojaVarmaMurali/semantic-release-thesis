@@ -13,7 +13,18 @@
 
 ### 🐛 Fixes
 
-## Fixes Commits Summary:
+## Fixes Commits Summary
+
+- ### Change
+    - Updated the scope in the release-cli.py file.
+
+- ### Reason
+    - To ensure the release-cli.py script functions as intended, the scope needed to be updated.
+
+- ### Impact
+    - This fix ensures that the release-cli.py script operates with the correct scope, enabling it to perform its intended tasks effectively.
+
+## Fixes
 
 - ### Change:
     - Fix: testing automated release notes in main /js-service.

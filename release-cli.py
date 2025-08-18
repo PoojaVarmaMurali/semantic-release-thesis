@@ -54,20 +54,21 @@ def detect_scope(repo_path: str) -> str:
         normalized = file.strip().lstrip("./")
 
         if normalized == "release-cli.py" or normalized.startswith(".github/") or normalized.startswith("core/"):
-            return "core"
+            top_dirs.add("core")
         else:
             top_dir = normalized.split('/')[0]
             top_dirs.add(top_dir)
 
-        
-        if "core" in top_dirs:
-            return "core"
-        elif "js-service" in top_dirs:
-            return "javascript"
-        elif "python-service" in top_dirs:
-            return "python"
-        elif "java-service" in top_dirs:
-            return "java"
+    print(f"\nDetected top-level directories: {top_dirs}")   
+
+    if "js-service" in top_dirs:
+        return "javascript"
+    elif "python-service" in top_dirs:
+        return "python"
+    elif "java-service" in top_dirs:
+        return "java"
+    elif "core" in top_dirs:
+        return "core"
 
 
     return detect_language(repo_path).strip().lower()
