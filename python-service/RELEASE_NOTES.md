@@ -1,13 +1,18 @@
 # Release Notes
 
-## [Unreleased]
+## 📦 Version 1.5.0
 
-### ✨ Features
+### 🐛 Fixes
 
-- ### Heading: Calculator Feature Update
-    - Change: Added a new feature to the calculator.py module.
-    - Reason: To enhance the functionality of the calculator.
-    - Impact: Users will have access to additional calculations or improved calculation capabilities, making the calculator more versatile and useful.
+Here is a summary of the fix commits: 
+
+- **Change:** fix: calculator.py 
+    - **Reason:** N/A
+    - **Impact:** N/A
+
+- **Change:** fix: updated the scope in release-cli.py 
+    - **Reason:** The change likely involved updating the scope or context in which the release-cli.py script operates.
+    - **Impact:** Updating the scope may have altered the behavior or functionality of the script, potentially affecting how it interacts with other components or its overall purpose.
 
 ## Fixes
 
