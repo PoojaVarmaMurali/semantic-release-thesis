@@ -1,5 +1,31 @@
 # Release Notes
 
+## 📦 Version 1.5.0
+
+### ✨ Features
+
+- **Heading:** Javascript Feature
+- **Change:** Added a new javascript feature.
+- **Reason:** To enhance the functionality of the web application.
+- **Impact:** Improved user experience and added new capabilities to the web application.
+
+## 📦 Version 1.4.0
+
+### 🐛 Fixes
+
+## Fixes Commits Summary:
+
+- ### Change: 
+    - Fix: testing automated release notes in main /js-service
+
+- ### Reason: 
+    - To test the automated release notes generation for the js-service repository.
+
+- ### Impact: 
+    - This change will ensure that the automated release notes are functioning correctly and provide accurate information for the js-service project. It will help maintain a clear and consistent record of changes, aiding in project documentation and future reference.
+
+# Release Notes
+
 ## 📦 Version 1.4.0-develop.2
 
 ### 🐛 Fixes

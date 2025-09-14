@@ -1,19 +1,18 @@
 # Release Notes
 
-## [Unreleased]
+## 📦 Version 1.5.0
 
 ### 🐛 Fixes
 
-## Fixes Commits Summary
+Here is a summary of the fix commits: 
 
-- ### Change: 
-    - Fixed an issue in the calculator.py file.
+- **Change:** fix: calculator.py 
+    - **Reason:** N/A
+    - **Impact:** N/A
 
-- ### Reason: 
-    - The change was made to address a bug or improve the functionality of the calculator.
-
-- ### Impact: 
-    - The fix ensures that the calculator functions accurately and reliably, improving the overall user experience.
+- **Change:** fix: updated the scope in release-cli.py 
+    - **Reason:** The change likely involved updating the scope or context in which the release-cli.py script operates.
+    - **Impact:** Updating the scope may have altered the behavior or functionality of the script, potentially affecting how it interacts with other components or its overall purpose.
 
 ## Fixes
 

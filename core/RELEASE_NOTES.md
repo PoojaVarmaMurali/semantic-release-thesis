@@ -1,6 +1,15 @@
 # Release Notes
 
-## [Unreleased]
+## 📦 Version 1.4.0
+
+### ✨ Features
+
+- ### Heading: Calculator Feature Update
+    - Change: Added a new feature to the calculator.py module.
+    - Reason: To enhance the functionality of the calculator.
+    - Impact: Users will have access to additional calculations or improved calculation capabilities, making the calculator more versatile and useful.
+
+## 📦 Version 1.3.0
 
 ### 🐛 Fixes
 
@@ -17,14 +26,14 @@
 
 ## Fixes
 
-- ### Change
-    - Testing fix
+- ### Change:
+    - Fix: testing automated release notes in main /js-service.
 
-- ### Reason
-    - N/A
+- ### Reason:
+    - The change was made to test the automated release notes generation for the js-service repository.
 
-- ### Impact
-    - N/A
+- ### Impact:
+    - This fix ensures that automated release notes are correctly generated and included in future releases of the js-service project. Accurate release notes improve communication and understanding of project updates for developers and stakeholders.
 
 ## Fixes Commits Summary:
 
@@ -47,6 +56,15 @@
 
 - ### Impact
     - This modification enhances the release note generation process by offering flexibility. It allows for easy access to up-to-date information about changes in the `develop` branch, aiding in transparency and communication regarding pre-release updates.
+
+## 📦 Version 1.2.0
+
+### ✨ Features
+
+- ### Heading: 
+    - **Change:** feat: Modified generate_release_notes.py script
+    - **Reason:** To enable generation of pre-release notes from the develop branch
+    - **Impact:** Allows for easier tracking of changes and faster access to release note information for pre-releases.
 
 ## 📦 Version 1.2.0-develop.10
 
