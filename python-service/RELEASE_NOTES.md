@@ -1,5 +1,18 @@
 # Release Notes
 
+## [Unreleased]
+
+### 🐛 Fixes
+
+## Fixes Commits Summary:
+
+- ### Change:
+    - Added a bug to the calculator.
+- ### Reason:
+    - N/A
+- ### Impact:
+    - May cause unexpected behavior or incorrect calculations in the calculator.
+
 ## 📦 Version 1.5.0
 
 ### 🐛 Fixes

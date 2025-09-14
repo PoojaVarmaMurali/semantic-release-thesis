@@ -1,3 +1,18 @@
+# [1.6.0-develop.1](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.5.0...py-v1.6.0-develop.1) (2025-09-14)
+
+
+### Bug Fixes
+
+* added a bug to the calculator ([b904b4d](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/b904b4dad9c12b7ff1f4cb42079eae8e91ceeb8e))
+* minor version upgrade in main ([b6c9a58](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/b6c9a588438ded2a4fbd30c0340e8771ab075a67))
+* testing a minor version bump ([88c0371](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/88c03718316c5f2c96022c4fda2f9e4190d3bb09))
+* testing minor bump ([c059d56](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/c059d56033719ad095d529f4035e713165018041))
+
+
+### Features
+
+* added a javascript feature ([f84c36a](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/f84c36ab324b613364f8599bd8d10f8a96797ff3))
+
 # [1.5.0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.4.1...py-v1.5.0) (2025-08-18)
 
 

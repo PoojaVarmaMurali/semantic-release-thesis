@@ -1,7 +1,7 @@
 <<<<<<< HEAD
-__version__ = "1.5.0"
+__version__ = "1.6.0-develop.1"
 =======
-__version__ = "1.5.0-develop.23"
+__version__ = "1.6.0-develop.1"
 >>>>>>> develop
 
 
