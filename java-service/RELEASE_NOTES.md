@@ -1,8 +1,39 @@
 # Release Notes
 
-## [Unreleased]
+## 📦 Version 1.5.0
+
+### 🐛 Fixes
+
+## Fixes Commits Summary:
+
+- ### Change: 
+    - Testing a minor version bump.
+
+- ### Reason: 
+    - To test the functionality of a minor version bump and ensure it does not cause any issues.
+
+- ### Impact: 
+    - This change will allow for a more seamless update process and ensure that minor version bumps do not disrupt the software's functionality.
 
 ### 🧹 Chores
+
+## Chores: Testing Workflows
+
+- Change: Testing workflows to ensure they are functioning as expected.
+- Reason: To maintain the reliability and efficiency of the development process.
+- Impact: This will help catch any potential issues with the workflows before they cause problems, ensuring a smoother development experience.
+
+### 🔖 Other
+
+## Summary of Other Commits
+
+- **Change:** Updated readme.md file
+    - **Reason:** To improve the documentation and provide clearer instructions or information.
+    - **Impact:** Enhanced documentation improves the user experience and makes it easier for developers to understand and use the project.
+
+- **Change:** Updated Readme.md file
+    - **Reason:** To make minor corrections or additions to the documentation.
+    - **Impact:** Maintaining accurate and up-to-date documentation ensures that users have access to the most current information, reducing potential confusion or errors.
 
 ## Chores: Testing Workflows
 
