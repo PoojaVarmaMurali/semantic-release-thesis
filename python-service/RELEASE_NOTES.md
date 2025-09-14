@@ -1,8 +1,15 @@
 # Release Notes
 
-## [Unreleased]
+## 📦 Version 1.6.0
 
 ### 🐛 Fixes
+
+- ### Change
+    - Fixed logic in the calculator.
+- ### Reason
+    - The calculator logic had errors.
+- ### Impact
+    - Users will now get correct results from the calculator.
 
 ## Fixes Commits Summary:
 
