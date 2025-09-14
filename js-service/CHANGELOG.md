@@ -1,3 +1,37 @@
+# [1.5.0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/js-v1.4.0...js-v1.5.0) (2025-09-14)
+
+
+### Bug Fixes
+
+* calculator.py ([1bd0688](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/1bd068852ab9a44ad9474ed97c9a23e0fedcbd9a))
+* minor version upgrade in main ([b6c9a58](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/b6c9a588438ded2a4fbd30c0340e8771ab075a67))
+* test the fix ([1f0c224](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/1f0c224bc790a318c8e223de817c4bd116161dbc))
+* test the fix ([12ae445](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/12ae445f04fc8627960640f46d461a8171096a42))
+* test the fix! ([86b359e](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/86b359eb3f87771fe696af8a787a291def269014))
+* testing ([57962a0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/57962a0176eb86e2df769c6aaadd44ab22bc04c0))
+* testing a minor version bump ([88c0371](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/88c03718316c5f2c96022c4fda2f9e4190d3bb09))
+* testing minor bump ([c059d56](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/c059d56033719ad095d529f4035e713165018041))
+* testing multi lang commit ([6417a2f](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/6417a2f6587c75d42059da070caf2aec9cd72ad2))
+* testing multi lang commit ([b8f1e7c](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/b8f1e7c016cf17fc57b0200d847b68964d3a1426))
+* updated the scope in release-cli.py ([7eceec3](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/7eceec349fcb9fda7d8f97d38d638a34033baeec))
+
+
+### Features
+
+* added a feature to calculator.py ([1fbea3f](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/1fbea3f1a747c00459daba3289088353ca8fcde0))
+* added a javascript feature ([f84c36a](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/f84c36ab324b613364f8599bd8d10f8a96797ff3))
+* added logic to run workflow for multiple language changes ([783f947](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/783f947f7bb4b2359b79e0ad9309a1e127c10478))
+* added logic to run workflow for multiple language changes ([1bc2bde](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/1bc2bde2262d5f7bd4866685a9308a555debce97))
+* added logic to run workflow for multiple language changes ([26cdcda](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/26cdcda07db1d0af5799fb3320c8b39319c3362e))
+* added logic to run workflow for multiple language changes ([545cc82](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/545cc82a004791787cf45134228ab91cec86605c))
+* added logic to run workflow for multiple language changes ([9958dd8](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/9958dd8c31afa7cbb1dba9a93b3d69c30c207ac0))
+* added logic to run workflow for multiple language changes ([bb06ec4](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/bb06ec4f815464c453dc699fcf0226f3d383221b))
+* added logic to run workflow for multiple language changes ([10b2b60](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/10b2b604f8a13f3a6f7b24ae69a7adfd17636971))
+* added logic to run workflow for multiple language changes ([eac04b0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/eac04b0ef57346b78ea3c203442450f265b7b205))
+* added logic to run workflow for multiple language changes ([b31a99c](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/b31a99cb715ba92557c59303ff67ff826bfe43f1))
+* going back to the old logic ([7de4d0a](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/7de4d0abfc168cd4206307857dc2b7392497701a))
+* Modified generate_release_notes.py to enable prerelease notes generation on develop branch ([bd6768d](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/bd6768d5588a7d890b0ae7c96c7fe01638da45af))
+
 # [1.4.0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/js-v1.3.0...js-v1.4.0) (2025-07-09)
 
 

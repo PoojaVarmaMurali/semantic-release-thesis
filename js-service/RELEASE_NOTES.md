@@ -1,5 +1,14 @@
 # Release Notes
 
+## 📦 Version 1.5.0
+
+### ✨ Features
+
+- **Heading:** Javascript Feature
+- **Change:** Added a new javascript feature.
+- **Reason:** To enhance the functionality of the web application.
+- **Impact:** Improved user experience and added new capabilities to the web application.
+
 ## 📦 Version 1.4.0
 
 ### 🐛 Fixes
