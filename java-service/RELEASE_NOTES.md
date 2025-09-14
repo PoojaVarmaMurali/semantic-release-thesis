@@ -1,5 +1,22 @@
 # Release Notes
 
+## 📦 Version 1.5.1
+
+### 🐛 Fixes
+
+## Fixes Commits Summary:
+
+- ### Change: 
+    - Minor version upgrade in the main branch.
+
+- ### Reason: 
+    - To incorporate small improvements, bug fixes, or security patches, ensuring the project remains up-to-date and stable.
+
+- ### Impact: 
+    - Maintains code stability and security by addressing minor issues. 
+    - Keeps the project current with the latest improvements, ensuring a smooth and reliable user experience. 
+    - May include performance optimizations for better responsiveness.
+
 ## 📦 Version 1.5.0
 
 ### 🐛 Fixes

@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/java-v1.5.0...java-v1.5.1) (2025-09-14)
+
+
+### Bug Fixes
+
+* minor version upgrade in main ([b6c9a58](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/b6c9a588438ded2a4fbd30c0340e8771ab075a67))
+
 # [1.5.0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/java-v1.4.0...java-v1.5.0) (2025-09-14)
 
 
