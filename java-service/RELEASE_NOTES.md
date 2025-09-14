@@ -2,7 +2,25 @@
 
 ## [Unreleased]
 
-### 🐛 Fixes
+### 🧹 Chores
+
+## Chores: Testing Workflows
+
+- Change: Testing workflows to ensure they are functioning as expected.
+- Reason: To maintain the reliability and efficiency of the development process.
+- Impact: This will help catch any potential issues with the workflows before they cause problems, ensuring a smoother development experience.
+
+### 🔖 Other
+
+## Summary of Other Commits
+
+- **Change:** Updated readme.md file
+    - **Reason:** To improve the documentation and provide clearer instructions or information.
+    - **Impact:** Enhanced documentation improves the user experience and makes it easier for developers to understand and use the project.
+
+- **Change:** Updated Readme.md file
+    - **Reason:** Likely to include additional information, fix typos, or improve formatting.
+    - **Impact:** Maintains consistent and accurate documentation, ensuring a positive user experience and reducing potential confusion.
 
 ## Fixes Commits Summary
 
