@@ -2,7 +2,18 @@
 
 ## [Unreleased]
 
-### 🧹 Chores
+### 🐛 Fixes
+
+## Fixes Commits Summary
+
+- ### Change: 
+    - Testing a minor version bump.
+
+- ### Reason: 
+    - To test the functionality of a minor version bump and ensure it does not cause any issues.
+
+- ### Impact: 
+    - This change will allow for a more seamless update process and ensure that minor version bumps do not disrupt the software's functionality.
 
 ## Chores: Testing Workflows
 
