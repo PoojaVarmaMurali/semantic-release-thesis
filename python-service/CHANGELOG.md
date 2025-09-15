@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.6.0...py-v1.7.0) (2025-09-15)
+
+
+### Features
+
+* added a feature to the calculator to calculate modulo ([e9e1efd](https://github.com/PoojaVarmaMurali/semantic-release-thesis/commit/e9e1efdede4e412627abe921bf2d9f3f42e8c8a5))
+
 # [1.6.0](https://github.com/PoojaVarmaMurali/semantic-release-thesis/compare/py-v1.5.0...py-v1.6.0) (2025-09-14)
 
 

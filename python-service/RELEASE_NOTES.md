@@ -1,5 +1,14 @@
 # Release Notes
 
+## 📦 Version 1.7.0
+
+### ✨ Features
+
+- **Heading:** Modulo Feature
+    - **Change:** Added a feature to the calculator to calculate modulo.
+    - **Reason:** To enhance the calculator's functionality and provide users with a wider range of operations.
+    - **Impact:** Users can now perform modulo calculations, increasing the calculator's versatility and usefulness for various mathematical tasks.
+
 ## 📦 Version 1.6.0
 
 ### 🐛 Fixes
